@@ -1,0 +1,2147 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/wooddestroying_insects"
+     xml:base="http://www.semanticweb.org/wooddestroying_insects"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:ns="http://creativecommons.org/ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:schema="http://schema.org/"
+     xmlns:untitled-ontology-14="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/wood_destroying_insects">
+        <ns:Licence xml:lang="en">https://creativecommons.org/licenses/by/2.0/
+
+This Open Data is free to use. Please cite the ontology or the paper as literature.</ns:Licence>
+        <dc:creator xml:lang="en">Christian Kreyenschmidt, Jade University of applied science, Odenburg / Germany</dc:creator>
+        <dc:title xml:lang="de">Ontologie holzzerstörender Insekten</dc:title>
+        <dc:title xml:lang="en">ontology of wood destroying insects</dc:title>
+        <schema:dateCreated xml:lang="en">2021-07-28</schema:dateCreated>
+        <rdfs:comment xml:lang="en">An Ontology about wood pests and their classification features</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://creativecommons.org/ns#Licence -->
+
+    <owl:AnnotationProperty rdf:about="http://creativecommons.org/ns#Licence"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/rights -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/rights"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://schema.org/dateCreated -->
+
+    <owl:AnnotationProperty rdf:about="http://schema.org/dateCreated"/>
+    
+
+
+    <!-- http://schema.org/license -->
+
+    <owl:AnnotationProperty rdf:about="http://schema.org/license"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#action_needed -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#action_needed">
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#cyclic_action"/>
+        <rdfs:comment xml:lang="en">In the case of an infestation there is a need for action.</rdfs:comment>
+        <rdfs:label xml:lang="en">action needed</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#has_bodycolor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#has_bodycolor">
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Colors"/>
+        <rdfs:comment xml:lang="en">Describes the bodycolor.</rdfs:comment>
+        <rdfs:label xml:lang="en">has bodycolor</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#has_fecescolor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#has_fecescolor">
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Colors"/>
+        <rdfs:comment xml:lang="en">Describes the fecescolor.</rdfs:comment>
+        <rdfs:label xml:lang="en">has fecescolor</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#has_fecesform -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#has_fecesform">
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#feces"/>
+        <rdfs:comment xml:lang="en">Describes the fecesform.</rdfs:comment>
+        <rdfs:label xml:lang="en">has fecesform</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#has_flyholeform -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#has_flyholeform">
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Flyholeform"/>
+        <rdfs:comment xml:lang="en">Describes the flyholeform.</rdfs:comment>
+        <rdfs:label xml:lang="en">has flyholeform</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#has_larvacolor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#has_larvacolor">
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Colors"/>
+        <rdfs:comment xml:lang="en">Describes the larvacolor.</rdfs:comment>
+        <rdfs:label xml:lang="en">has larvacolor</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#has_special_feature -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#has_special_feature">
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Special_Features"/>
+        <rdfs:comment xml:lang="en">Describes a special feature of the insect.</rdfs:comment>
+        <rdfs:label xml:lang="en">has special feature</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#has_wingcolor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#has_wingcolor">
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Colors"/>
+        <rdfs:comment xml:lang="en">Describes the wingcolor.</rdfs:comment>
+        <rdfs:label xml:lang="en">has wingcolor</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#is_affecting -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#is_affecting">
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Wood"/>
+        <rdfs:comment xml:lang="en">Describes the kind of wood that could get affected from the insect.</rdfs:comment>
+        <rdfs:label xml:lang="en">is affecting</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Bodylength_insect -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Bodylength_insect">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:comment xml:lang="en">Describes the bodylength of the insect.</rdfs:comment>
+        <rdfs:label xml:lang="en">Bodylength</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#has_fly_hole_size -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#has_fly_hole_size">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Insects"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:comment xml:lang="en">Describes the flyholesize of the insect. In case it is oval, the value discribes the length of the hole.</rdfs:comment>
+        <rdfs:label xml:lang="en">flyholesize</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#has_larvalength -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#has_larvalength">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:comment xml:lang="en">Describes the bodylength of the larva.</rdfs:comment>
+        <rdfs:label xml:lang="en">Larvalength</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#need_wood_humidity -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#need_wood_humidity">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:comment xml:lang="en">Describes the minimum wood humidity that is needed for the insect activity.</rdfs:comment>
+        <rdfs:label xml:lang="en">need wood humidity</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#stay_for_generations -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#stay_for_generations">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:comment xml:lang="en">Describes the generation tim the insects stay in the wood. This value is only important for cyclic insects.</rdfs:comment>
+        <rdfs:label xml:lang="en">Stay for generations</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Alder_Heartwood -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Alder_Heartwood">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Hardwood_Heartwood"/>
+        <rdfs:comment>Erle_Kernholz (deutsch)</rdfs:comment>
+        <rdfs:label xml:lang="en">Alder_Heartwood</rdfs:label>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q1355553</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Alder_Sapwood -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Alder_Sapwood">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Hardwood_Sapwood"/>
+        <rdfs:comment>Erle_Splintholz (deutsch)</rdfs:comment>
+        <rdfs:label xml:lang="en">Alder_Sapwood</rdfs:label>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q1355553</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Ash_Heartwood -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Ash_Heartwood">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Hardwood_Heartwood"/>
+        <rdfs:comment>Esche_Kernholz (deutsch)</rdfs:comment>
+        <rdfs:label xml:lang="en">Ash_Heartwood</rdfs:label>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q1367022</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Ash_Sapwood -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Ash_Sapwood">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Hardwood_Sapwood"/>
+        <rdfs:comment>Esche_Splintholz (deutsch)</rdfs:comment>
+        <rdfs:label xml:lang="en">Ash_Sapwood</rdfs:label>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q1367022</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Beech_Heartwood -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Beech_Heartwood">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Hardwood_Heartwood"/>
+        <rdfs:comment>Buche_Kernholz (deutsch)</rdfs:comment>
+        <rdfs:label xml:lang="en">Beech_Heartwood</rdfs:label>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q998316</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Beech_Sapwood -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Beech_Sapwood">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Hardwood_Sapwood"/>
+        <rdfs:comment>Buche_Kernholz (deutsch)</rdfs:comment>
+        <rdfs:label xml:lang="en">Beech_Sapwood</rdfs:label>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q998316</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Chemicals -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Chemicals">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Treatment"/>
+        <rdfs:comment xml:lang="en">Wood preservative with preventive effectiveness against individual beetle species or against all wood-destroying insects.</rdfs:comment>
+        <rdfs:label xml:lang="en">Chemical</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Chestnut_Heartwood -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Chestnut_Heartwood">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Hardwood_Heartwood"/>
+        <rdfs:comment>Kastanie_Kernholz (deutsch)</rdfs:comment>
+        <rdfs:label xml:lang="en">Chestnut_Heartwood</rdfs:label>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q28870512</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Chestnut_Sapwood -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Chestnut_Sapwood">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Hardwood_Sapwood"/>
+        <rdfs:comment>Kastanie_Splintholz (deutsch)</rdfs:comment>
+        <rdfs:label xml:lang="en">Chestnut_Sapwood</rdfs:label>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q28870512</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Colors -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Colors">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Damage_characteristics"/>
+        <rdfs:comment xml:lang="en">Discribes the spectrum of the insect related colors.</rdfs:comment>
+        <rdfs:label xml:lang="en">Colors</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Cylinder_form -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Cylinder_form">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#feces"/>
+        <rdfs:comment xml:lang="en">Fecal particles are cylindrical and cut straight at the ends.</rdfs:comment>
+        <rdfs:label xml:lang="en">cylindrical shaped</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Damage_characteristics -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Damage_characteristics">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment xml:lang="en">Characteristics and attributes of the damage location and the insects features.</rdfs:comment>
+        <rdfs:label xml:lang="en">Damage characteristics</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Douglas_fir_Heartwood -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Douglas_fir_Heartwood">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Softwood_Heartwood"/>
+        <rdfs:comment>Douglasie_Kernholz (deutsch)</rdfs:comment>
+        <rdfs:label xml:lang="en">Douglas Fir_Heartwood</rdfs:label>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q13574159</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Douglas_fir_Sapwood -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Douglas_fir_Sapwood">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Softwood_Sapwood"/>
+        <rdfs:comment>Douglasie_Splintholz (deutsch)</rdfs:comment>
+        <rdfs:label xml:lang="en">Douglas Fir_Sapwood</rdfs:label>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q13574159</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Drywood_insects -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Drywood_insects">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Insectclasses"/>
+        <rdfs:comment xml:lang="en">Affects dry and semi-dry wood.</rdfs:comment>
+        <rdfs:label xml:lang="en">Drywood insects</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Exchange -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Exchange">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Treatment"/>
+        <rdfs:comment xml:lang="en">Replacement and reinforcement of severely damaged and unsound wooden elements.</rdfs:comment>
+        <rdfs:label xml:lang="en">Exchange</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Fir_Heartwood -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Fir_Heartwood">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Softwood_Heartwood"/>
+        <rdfs:comment>Tanne_Kernholz (deutsch)</rdfs:comment>
+        <rdfs:label xml:lang="en">Fir_Heartwood</rdfs:label>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q25350</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Fir_Sapwood -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Fir_Sapwood">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Softwood_Sapwood"/>
+        <rdfs:comment>Tanne_Splintholz (deutsch)</rdfs:comment>
+        <rdfs:label xml:lang="en">Fir_Sapwood</rdfs:label>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q25350</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Fly_holes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Fly_holes">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Damage_characteristics"/>
+        <rdfs:comment xml:lang="en">Discribes the form and features of the flyholes.</rdfs:comment>
+        <rdfs:label xml:lang="en">flyhole attributes</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Flyholeform -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Flyholeform">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Fly_holes"/>
+        <rdfs:comment xml:lang="en">Discribes the form of the flyholes.</rdfs:comment>
+        <rdfs:label xml:lang="en">flyholeform</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Freshwood_insects -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Freshwood_insects">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Insectclasses"/>
+        <rdfs:comment xml:lang="en">Occur on live tree or freshly felled trunks.</rdfs:comment>
+        <rdfs:label xml:lang="en">Freshwood insects</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Fringed_outlet_holes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Fringed_outlet_holes">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Fly_holes"/>
+        <rdfs:comment xml:lang="en">The outlet of the fly hole is fringed.</rdfs:comment>
+        <rdfs:label xml:lang="en">fringed</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#GK0 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#GK0">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Hazard_class_according_to_DIN_68800-1"/>
+        <rdfs:comment xml:lang="en">Wood or wood product under roof, not exposed to weathering and no humidification, the risk of structural damage by insects can be excluded.</rdfs:comment>
+        <rdfs:label xml:lang="en">DC0</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#GK1 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#GK1">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Hazard_class_according_to_DIN_68800-1"/>
+        <rdfs:comment xml:lang="en">Wood or wood product under roof, not exposed to weathering and not humidified.</rdfs:comment>
+        <rdfs:label xml:lang="en">DC1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#GK2 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#GK2">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Hazard_class_according_to_DIN_68800-1"/>
+        <rdfs:comment xml:lang="en">Wood or wood product under roof, not exposed to weathering, high ambient humidity can lead to le-gual but not permanent moistening.</rdfs:comment>
+        <rdfs:label xml:lang="en">DC2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#GK3a -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#GK3a">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Hazard_class_according_to_DIN_68800-1"/>
+        <rdfs:comment xml:lang="en">Wood or wood product not under roof, with weathering, but without constant contact with soil or water, accumulation of water in the wood, even spatially limited, is not to be expected due to rapid re-drying.</rdfs:comment>
+        <rdfs:label xml:lang="en">DC3a</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#GK3b -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#GK3b">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Hazard_class_according_to_DIN_68800-1"/>
+        <rdfs:comment xml:lang="en">Wood or wood product not under roof, with weathering, but without constant contact with soil or water, accumulation of water in the wood, also spatially limited, to be expected.</rdfs:comment>
+        <rdfs:label xml:lang="en">DC3b</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#GK4 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#GK4">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Hazard_class_according_to_DIN_68800-1"/>
+        <rdfs:comment xml:lang="en">Wood or wood product in contact with soil or fresh water and thus mainly to permanently exposed to moisture during moderate to heavy use.</rdfs:comment>
+        <rdfs:label xml:lang="en">DC4</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#GK5 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#GK5">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Hazard_class_according_to_DIN_68800-1"/>
+        <rdfs:comment xml:lang="en">Wood or wood product, constantly exposed to seawater.</rdfs:comment>
+        <rdfs:label xml:lang="en">DC5</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Gas_methods -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Gas_methods">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Treatment"/>
+        <rdfs:comment xml:lang="en">The fumigation process is based on the application of toxic gases, while the control with modified atmospheres is based on the application of asphyxiating gases.</rdfs:comment>
+        <rdfs:label xml:lang="en">Gas method</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Hardwood -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Hardwood">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Wood"/>
+        <rdfs:comment>Laubholz (deutsch)</rdfs:comment>
+        <rdfs:label xml:lang="en">Hardwood</rdfs:label>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q2266509</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Hardwood_Heartwood -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Hardwood_Heartwood">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Hardwood"/>
+        <rdfs:label xml:lang="en">Hardwood heartwood</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Hardwood_Sapwood -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Hardwood_Sapwood">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Hardwood"/>
+        <rdfs:label xml:lang="en">Hardwood sapwood</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Hazard_class_according_to_DIN_68800-1 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Hazard_class_according_to_DIN_68800-1">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment xml:lang="en">Danger classes (DC) - description of general conditions of use as well as possible hazards/stresses and moisture content of the installed wood. (According to the DIN 68800-1)</rdfs:comment>
+        <rdfs:label>Danger classes</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Hot_Air -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Hot_Air">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Treatment"/>
+        <rdfs:comment xml:lang="en">The hot-air method as a standard sanitation method for combating wood-destroying insects belongs to the thermal methods.
+The hot air process does not protect the treated wood from new infestation.</rdfs:comment>
+        <rdfs:label xml:lang="en">Hot air method</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Injektion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Injektion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Treatment"/>
+        <rdfs:comment xml:lang="en">Treatment of the wooden structure with borehole impregnation or borehole pressure impregnation with wood injectors</rdfs:comment>
+        <rdfs:label xml:lang="en">Injection</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Insectclasses -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Insectclasses">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Insects"/>
+        <rdfs:comment xml:lang="en">Describes superordinate classes that describe characteristics, behavior, and distribution of insects.</rdfs:comment>
+        <rdfs:label xml:lang="en">Insectclasses</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Insects -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Insects">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label xml:lang="en">Insects characteristics</rdfs:label>
+        <owl:incompatibleWith xml:lang="en">List of all important wood destroying insects.</owl:incompatibleWith>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Larch_Heartwood -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Larch_Heartwood">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Softwood_Heartwood"/>
+        <rdfs:comment>Lärche_Kernholz (deutsch)</rdfs:comment>
+        <rdfs:label xml:lang="en">Larch_Heartwood</rdfs:label>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q1879281</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Larch_Sapwood -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Larch_Sapwood">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Softwood_Sapwood"/>
+        <rdfs:comment>Lärche_Splintholz (deutsch)</rdfs:comment>
+        <rdfs:label xml:lang="en">Larch_Sapwood</rdfs:label>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q1879281</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Longhorn_beetle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Longhorn_beetle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Insectclasses"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Horn-like arranged antennae. Larvae cylindrical flattened. Larval color white, yellowish, ivory. Thickened cull thighs.</rdfs:comment>
+        <rdfs:label xml:lang="en">Longhorn beetle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Make_hearable_nagging_noise -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Make_hearable_nagging_noise">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Insectclasses"/>
+        <rdfs:comment xml:lang="en">Is is possible to hear nagging noises fom the insects.</rdfs:comment>
+        <rdfs:label xml:lang="en">Making hearable noise</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Oak_Heartwood -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Oak_Heartwood">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Hardwood_Heartwood"/>
+        <rdfs:comment>Eiche_Kernholz (deutsch)</rdfs:comment>
+        <rdfs:label xml:lang="en">Oak_Heartwood</rdfs:label>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q2075708</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Oak_Sapwood -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Oak_Sapwood">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Hardwood_Sapwood"/>
+        <rdfs:comment>Eiche_Splintholz (deutsch)</rdfs:comment>
+        <rdfs:label xml:lang="en">Oak_Sapwood</rdfs:label>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q2075708</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Pine_Heartwood -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Pine_Heartwood">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Softwood_Heartwood"/>
+        <rdfs:comment>Kiefer_Kernholz (deutsch)</rdfs:comment>
+        <rdfs:label xml:lang="en">Pine_Heartwood</rdfs:label>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q1503211</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Pine_Sapwood -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Pine_Sapwood">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Softwood_Sapwood"/>
+        <rdfs:comment>Kiefer_Splintholz (deutsch)</rdfs:comment>
+        <rdfs:label xml:lang="en">Pine_Sapwood</rdfs:label>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q1503211</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Redbeech_Heartwood -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Redbeech_Heartwood">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Hardwood_Heartwood"/>
+        <rdfs:comment>Rotbuche_Kernholz (deutsch)</rdfs:comment>
+        <rdfs:label xml:lang="en">Redbeech_Heartwood</rdfs:label>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q146149</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Redbeech_Sapwood -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Redbeech_Sapwood">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Hardwood_Sapwood"/>
+        <rdfs:comment>Rotbuche_Splintholz (deutsch)</rdfs:comment>
+        <rdfs:label xml:lang="en">Redbeech_Sapwood</rdfs:label>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q146149</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Report_is_required -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Report_is_required">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Damage_characteristics"/>
+        <rdfs:comment xml:lang="en">The classification of this insect is to report to the local authorities.</rdfs:comment>
+        <rdfs:label xml:lang="en">reportable_insect</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Roll-shaped -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Roll-shaped">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#feces"/>
+        <rdfs:comment xml:lang="en">Feces pills are lenticular.</rdfs:comment>
+        <rdfs:label xml:lang="en">roll-shaped</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Rottenwood_Insects -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Rottenwood_Insects">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Insectclasses"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Primarily found in wood pre-damaged by fungi. Suspect hidden fungal damage when found.</rdfs:comment>
+        <rdfs:label xml:lang="en">Rottenwood insect</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Sapwood_beetle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Sapwood_beetle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Insectclasses"/>
+        <rdfs:comment xml:lang="en">This insects are only affecting sapwood of hardwood.</rdfs:comment>
+        <rdfs:label xml:lang="en">Sapwood beetle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Smooth_outlet_holes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Smooth_outlet_holes">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Fly_holes"/>
+        <rdfs:comment xml:lang="en">The outlet of the fly hole is smooth.</rdfs:comment>
+        <rdfs:label xml:lang="en">smooth</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Softwood -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Softwood">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Wood"/>
+        <rdfs:comment>Nadelholz (deutsch)</rdfs:comment>
+        <rdfs:label xml:lang="en">Softwood</rdfs:label>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q252108</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Softwood_Heartwood -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Softwood_Heartwood">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Softwood"/>
+        <rdfs:label xml:lang="en">Softwood heartwood</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Softwood_Sapwood -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Softwood_Sapwood">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Softwood"/>
+        <rdfs:label xml:lang="en">Softwood sapwood</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Special_Features -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Special_Features">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Damage_characteristics"/>
+        <rdfs:comment xml:lang="en">Describes a unique feature of an insect.</rdfs:comment>
+        <rdfs:label xml:lang="en">Special features</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Spruce_Heartwood -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Spruce_Heartwood">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Softwood_Heartwood"/>
+        <rdfs:comment>Fichte_Kernholz (deutsch)</rdfs:comment>
+        <rdfs:label xml:lang="en">Spruce_Heartwood</rdfs:label>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q26782</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Spruce_Sapwood -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Spruce_Sapwood">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Softwood_Sapwood"/>
+        <rdfs:comment>Fichte_Splintholz (deutsch)</rdfs:comment>
+        <rdfs:label xml:lang="en">Spruce_Sapwood</rdfs:label>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q26782</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Treatment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Treatment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#load_bearing_structure_relevant"/>
+        <rdfs:comment xml:lang="en">Treatment_according_to_DIN_68800-4</rdfs:comment>
+        <rdfs:label xml:lang="en">Treatment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Wood -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Wood">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment xml:lang="en">Fibrous material from trees or other plants.</rdfs:comment>
+        <rdfs:label>Wood</rdfs:label>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q287</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#acyclic_action -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#acyclic_action">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#insect_cycle"/>
+        <rdfs:comment xml:lang="en">Insects of this class are usually affecting the wood for one period. After hatching, the insects fly out and leave the structure.</rdfs:comment>
+        <rdfs:label xml:lang="en">Acyclic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#black -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#black">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Colors"/>
+        <rdfs:comment xml:lang="en">Color type.</rdfs:comment>
+        <rdfs:label xml:lang="en">Black</rdfs:label>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q23445</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#blue -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#blue">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Colors"/>
+        <rdfs:comment xml:lang="en">Color type.</rdfs:comment>
+        <rdfs:label xml:lang="en">Blue</rdfs:label>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q1088</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#bronze -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#bronze">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Colors"/>
+        <rdfs:comment xml:lang="en">Color type.</rdfs:comment>
+        <rdfs:label xml:lang="en">Bronze</rdfs:label>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q2778382</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#brown -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#brown">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Colors"/>
+        <rdfs:comment xml:lang="en">Color type.</rdfs:comment>
+        <rdfs:label xml:lang="en">Brown</rdfs:label>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q47071</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#cyclic_action -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#cyclic_action">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#insect_cycle"/>
+        <rdfs:comment xml:lang="en">Insects of this class are usually affecting the wood for more than one period. After hatching, the insects direcly mate and lay eggs in the same structure.</rdfs:comment>
+        <rdfs:label xml:lang="en">Cyclic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#feces -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#feces">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Damage_characteristics"/>
+        <rdfs:comment xml:lang="en">Describes the residues from insect feeding activities.</rdfs:comment>
+        <rdfs:label xml:lang="en">Feces</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#fine_and_dusty -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#fine_and_dusty">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#feces"/>
+        <rdfs:comment xml:lang="en">Fine wood flour. The fecal pills have partially long drawn ends.</rdfs:comment>
+        <rdfs:label xml:lang="en">fine and dusty</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#frequency -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#frequency">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Insectclasses"/>
+        <rdfs:comment xml:lang="en">Describes the freqeucy of the insect.</rdfs:comment>
+        <rdfs:label xml:lang="en">Frequency</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#insect_cycle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#insect_cycle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Insectclasses"/>
+        <rdfs:comment xml:lang="en">Discribes the cycle behavior of the insect.</rdfs:comment>
+        <rdfs:label xml:lang="en">Insect cycle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#ivory -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#ivory">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Colors"/>
+        <rdfs:comment xml:lang="en">Color type.</rdfs:comment>
+        <rdfs:label xml:lang="en">Ivory</rdfs:label>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q1358981</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#light_yellow -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#light_yellow">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Colors"/>
+        <rdfs:comment xml:lang="en">Color type.</rdfs:comment>
+        <rdfs:label xml:lang="en">Light Yellow</rdfs:label>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q68223248</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#load_bearing_structure_irrelevant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#load_bearing_structure_irrelevant">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Damage_characteristics"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#load_bearing_structure_relevant"/>
+        <rdfs:comment xml:lang="en">The damage is not relevant for load bearing structure.</rdfs:comment>
+        <rdfs:label xml:lang="en">bearing_irrelevant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#load_bearing_structure_relevant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#load_bearing_structure_relevant">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Damage_characteristics"/>
+        <rdfs:comment xml:lang="en">The damage is relevant for load bearing structure.</rdfs:comment>
+        <rdfs:label xml:lang="en">bearing_relevant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#often -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#often">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#frequency"/>
+        <rdfs:comment xml:lang="en">Insects of this class are often found as wooddestroyer.</rdfs:comment>
+        <rdfs:label xml:lang="en">Often found</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#oval -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#oval">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Flyholeform"/>
+        <rdfs:comment xml:lang="en">The flyhole is oval.</rdfs:comment>
+        <rdfs:label xml:lang="en">oval</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#red -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#red">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Colors"/>
+        <rdfs:comment xml:lang="en">Color type.</rdfs:comment>
+        <rdfs:label xml:lang="en">Red</rdfs:label>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q3142</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#round -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#round">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Flyholeform"/>
+        <rdfs:comment xml:lang="en">The flyhole is round.</rdfs:comment>
+        <rdfs:label xml:lang="en">round</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#seldom -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#seldom">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#frequency"/>
+        <rdfs:comment xml:lang="en">Insects of this class are seldom found as wooddestroyer.</rdfs:comment>
+        <rdfs:label xml:lang="en">Seldom found</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#unknown_insect -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#unknown_insect">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#has_bodycolor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#brown"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment xml:lang="en">In this class you can describe your finding about the damage. Plaese write the finings in the class &quot;Equivalent To&quot; and the start the reasoner!</rdfs:comment>
+        <rdfs:label xml:lang="en">Reasoning your damage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#white -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#white">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Colors"/>
+        <rdfs:comment xml:lang="en">Color type.</rdfs:comment>
+        <rdfs:label xml:lang="en">White</rdfs:label>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q23444</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#woodboring_beetle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#woodboring_beetle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Insectclasses"/>
+        <rdfs:comment xml:lang="en">All anobia are small beetles with brownish color with a typical neck shield that covers the neck like a hood.  The exit holes are circular with a diameter of 1.5 - 3.5mm. The larvae are white and have three pairs of legs. Depending on the species, the beetles live in dry hardwood and/or hardwood as well as moist fungus-infested wood.</rdfs:comment>
+        <rdfs:label xml:lang="en">Woodboring beetle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#yellow -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#yellow">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Colors"/>
+        <rdfs:comment xml:lang="en">Color type.</rdfs:comment>
+        <rdfs:label xml:lang="en">Yellow</rdfs:label>
+        <rdfs:seeAlso>https://www.wikidata.org/wiki/Q943</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Blauer_Scheibenbock -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Blauer_Scheibenbock">
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Douglas_fir_Sapwood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Fir_Sapwood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Freshwood_insects"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#GK4"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#GK5"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Insectclasses"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Insects"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Larch_Sapwood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Longhorn_beetle"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Pine_Sapwood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Smooth_outlet_holes"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Spruce_Sapwood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#acyclic_action"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#load_bearing_structure_irrelevant"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#often"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#oval"/>
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#has_fly_hole_size"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#has_fly_hole_size"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#has_fly_hole_size"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#has_bodycolor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#blue"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label xml:lang="de">Blauer Scheibenbock</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Callidium violaceum</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">https://www.wikidata.org/wiki/Q748359</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Grubenhalsbock -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Grubenhalsbock">
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Douglas_fir_Heartwood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Douglas_fir_Sapwood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Fir_Heartwood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Fir_Sapwood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Freshwood_insects"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Fringed_outlet_holes"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#GK4"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#GK5"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Insects"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Larch_Heartwood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Larch_Sapwood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Longhorn_beetle"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Pine_Heartwood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Pine_Sapwood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Smooth_outlet_holes"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Spruce_Heartwood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Spruce_Sapwood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#acyclic_action"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#load_bearing_structure_irrelevant"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#oval"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#seldom"/>
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#has_fly_hole_size"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#has_fly_hole_size"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#has_fly_hole_size"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#has_fly_hole_size"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#has_fly_hole_size"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#has_fly_hole_size"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#has_fly_hole_size"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#has_bodycolor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#brown"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Criocephalus rusticus</rdfs:label>
+        <rdfs:label xml:lang="de">Grubenhalsbock</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">https://www.wikidata.org/wiki/Q1265892</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Hausbock -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Hausbock">
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Cylinder_form"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Drywood_insects"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Fir_Sapwood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Fringed_outlet_holes"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#GK1"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#GK2"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#GK3a"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#GK3b"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#GK4"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#GK5"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Insectclasses"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Insects"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Larch_Sapwood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Longhorn_beetle"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Make_hearable_nagging_noise"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Pine_Sapwood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Report_is_required"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Smooth_outlet_holes"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#cyclic_action"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#fine_and_dusty"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#load_bearing_structure_irrelevant"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#often"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#oval"/>
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#has_fly_hole_size"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#has_fly_hole_size"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#has_fly_hole_size"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#has_fly_hole_size"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#has_bodycolor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#black"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#has_bodycolor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#brown"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label xml:lang="de">Hausbock</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">hylotrupes bajulus</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">https://www.wikidata.org/wiki/Q21121</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Holzwespen -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Holzwespen">
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Cylinder_form"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Douglas_fir_Sapwood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Fir_Sapwood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Freshwood_insects"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#GK4"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#GK5"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Insectclasses"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Insects"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Larch_Sapwood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Pine_Sapwood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Smooth_outlet_holes"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Spruce_Sapwood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#acyclic_action"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#load_bearing_structure_irrelevant"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#often"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#round"/>
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#has_fly_hole_size"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#has_fly_hole_size"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#has_fly_hole_size"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#has_fly_hole_size"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#has_fly_hole_size"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#has_fly_hole_size"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#has_fly_hole_size"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#has_bodycolor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#black"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#has_bodycolor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#yellow"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label xml:lang="de">Holzwespen</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">urocerus gigas</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">https://www.wikidata.org/wiki/Q967809</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Kapuzinerkäfer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Kapuzinerkäfer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Drywood_insects"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#GK1"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#GK2"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#GK3a"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#GK3b"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#GK4"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#GK5"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Insects"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Oak_Heartwood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Oak_Sapwood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Smooth_outlet_holes"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#acyclic_action"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#load_bearing_structure_irrelevant"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#round"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#seldom"/>
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#has_fly_hole_size"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#has_fly_hole_size"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#has_fly_hole_size"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#has_bodycolor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#black"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#has_bodycolor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#brown"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label xml:lang="de">Kapuzinerkäfer</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">bostrychus capucinus</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">https://www.wikidata.org/wiki/Q1734080</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Rothalsbock -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Rothalsbock">
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Douglas_fir_Sapwood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Fir_Sapwood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Freshwood_insects"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Fringed_outlet_holes"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#GK4"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#GK5"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Insects"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Larch_Sapwood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Longhorn_beetle"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Pine_Sapwood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Smooth_outlet_holes"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Spruce_Sapwood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#acyclic_action"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#load_bearing_structure_irrelevant"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#round"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#seldom"/>
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#has_fly_hole_size"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#has_fly_hole_size"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#has_fly_hole_size"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#has_fly_hole_size"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#has_bodycolor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#brown"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#has_bodycolor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#red"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Leptura rubra</rdfs:label>
+        <rdfs:label xml:lang="de">Rothalsbock</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">https://www.wikidata.org/wiki/Q1928502</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Schusterbock -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Schusterbock">
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Douglas_fir_Sapwood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Fir_Sapwood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Freshwood_insects"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Fringed_outlet_holes"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#GK4"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#GK5"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Insects"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Larch_Sapwood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Longhorn_beetle"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Pine_Sapwood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Smooth_outlet_holes"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Spruce_Sapwood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#acyclic_action"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#load_bearing_structure_irrelevant"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#round"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#seldom"/>
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#has_fly_hole_size"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#has_fly_hole_size"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#has_fly_hole_size"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#has_fly_hole_size"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#has_fly_hole_size"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#has_fly_hole_size"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#has_fly_hole_size"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#has_bodycolor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#black"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label xml:lang="de">Schusterbock</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">monochamus sartor</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">https://www.wikidata.org/wiki/Q1093724</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Schwammholz-Nagekäfer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Schwammholz-Nagekäfer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Douglas_fir_Heartwood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Douglas_fir_Sapwood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Fir_Heartwood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Fir_Sapwood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#GK4"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#GK5"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Insects"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Larch_Heartwood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Larch_Sapwood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Pine_Heartwood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Pine_Sapwood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Rottenwood_Insects"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Spruce_Sapwood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#acyclic_action"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#fine_and_dusty"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#load_bearing_structure_irrelevant"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#round"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#seldom"/>
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#has_fly_hole_size"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#has_fly_hole_size"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#has_bodycolor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#brown"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#has_bodycolor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#red"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label xml:lang="de">Schwammholz-Nagekäfer</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">priobium carpini</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">https://www.wikidata.org/wiki/Q2916527</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Trotzkopf -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Trotzkopf">
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Douglas_fir_Heartwood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Douglas_fir_Sapwood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Fir_Heartwood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Fir_Sapwood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#GK4"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#GK5"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Insectclasses"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Insects"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Larch_Heartwood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Larch_Sapwood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Pine_Heartwood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Pine_Sapwood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Rottenwood_Insects"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Spruce_Heartwood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Spruce_Sapwood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#acyclic_action"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#fine_and_dusty"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#load_bearing_structure_relevant"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#often"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#round"/>
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#has_fly_hole_size"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#has_fly_hole_size"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#has_bodycolor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#black"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#has_bodycolor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#brown"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label xml:lang="de">Trotzkopf</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">hadrobregmus pertinax</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">https://www.wikidata.org/wiki/Q1788955</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#brauner_Splintholzkäfer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#brauner_Splintholzkäfer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Alder_Sapwood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Ash_Sapwood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Beech_Sapwood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Chestnut_Sapwood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Drywood_insects"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#GK0"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#GK1"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#GK2"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#GK3a"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#GK3b"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#GK4"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#GK5"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Insectclasses"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Insects"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Oak_Sapwood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Redbeech_Sapwood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Sapwood_beetle"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Smooth_outlet_holes"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#acyclic_action"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#fine_and_dusty"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#load_bearing_structure_irrelevant"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#often"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#round"/>
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#has_fly_hole_size"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#has_fly_hole_size"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#has_bodycolor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#brown"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#has_bodycolor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#red"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label xml:lang="de">Brauner Splintholzkäfer</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">lyctus brunneus</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">https://www.wikidata.org/wiki/Q639794</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#gekämmter_Nagekäfer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#gekämmter_Nagekäfer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Alder_Heartwood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Alder_Sapwood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Ash_Heartwood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Ash_Sapwood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Beech_Heartwood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Beech_Sapwood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Chestnut_Heartwood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Chestnut_Sapwood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Drywood_insects"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#GK1"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#GK2"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#GK3a"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#GK3b"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#GK4"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#GK5"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Hardwood_Sapwood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Insects"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Oak_Heartwood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Oak_Sapwood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Redbeech_Heartwood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Redbeech_Sapwood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Smooth_outlet_holes"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#acyclic_action"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#load_bearing_structure_irrelevant"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#round"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#seldom"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#woodboring_beetle"/>
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#has_fly_hole_size"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#has_fly_hole_size"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#has_bodycolor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#black"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#has_bodycolor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#brown"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label xml:lang="de">Gekämmter Nagekäfer</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">ptilinus pectinicornis</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">https://www.wikidata.org/wiki/Q2314103</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#gewöhnlicher_Nagekäfer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#gewöhnlicher_Nagekäfer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Alder_Heartwood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Alder_Sapwood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Ash_Heartwood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Ash_Sapwood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Beech_Heartwood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Beech_Sapwood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Chestnut_Heartwood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Chestnut_Sapwood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Douglas_fir_Heartwood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Douglas_fir_Sapwood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Drywood_insects"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Fir_Heartwood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Fir_Sapwood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#GK1"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#GK2"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#GK3a"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#GK3b"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#GK4"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#GK5"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Insectclasses"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Insects"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Larch_Sapwood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Oak_Sapwood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Pine_Heartwood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Pine_Sapwood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Redbeech_Heartwood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Redbeech_Sapwood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Smooth_outlet_holes"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Spruce_Heartwood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Spruce_Sapwood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#cyclic_action"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#fine_and_dusty"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#load_bearing_structure_relevant"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#often"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#round"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#woodboring_beetle"/>
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#has_fly_hole_size"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#has_fly_hole_size"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#has_bodycolor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#black"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#has_bodycolor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#brown"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label xml:lang="de">Gewöhnlicher Nagekäfer</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">anobium punctatum</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">https://www.wikidata.org/wiki/Q27925</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#linierter_Splintholzkäfer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#linierter_Splintholzkäfer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Drywood_insects"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#GK0"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#GK1"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#GK2"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#GK3a"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#GK3b"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#GK4"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#GK5"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Insectclasses"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Insects"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Oak_Heartwood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Oak_Sapwood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Sapwood_beetle"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Smooth_outlet_holes"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#acyclic_action"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#fine_and_dusty"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#load_bearing_structure_irrelevant"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#often"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#round"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#has_bodycolor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#black"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#has_bodycolor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#brown"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#has_fly_hole_size"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:hasValue>
+            </owl:Restriction>
+        </rdf:type>
+        <untitled-ontology-14:has_special_feature rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#pointed_stripes_on_the_wings"/>
+        <rdfs:label xml:lang="de">Linierter Splintholzkäfer</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">lyctus linearis</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">https://www.wikidata.org/wiki/Q637273</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#pointed_stripes_on_the_wings -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#pointed_stripes_on_the_wings">
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Special_Features"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#veränderlicher_Scheibenbock -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#veränderlicher_Scheibenbock">
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Beech_Sapwood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Douglas_fir_Sapwood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Fir_Sapwood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Freshwood_insects"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#GK4"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#GK5"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Insectclasses"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Insects"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Larch_Sapwood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Longhorn_beetle"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Oak_Sapwood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Pine_Sapwood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Smooth_outlet_holes"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Spruce_Sapwood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#acyclic_action"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#load_bearing_structure_irrelevant"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#often"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#oval"/>
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#has_fly_hole_size"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#has_fly_hole_size"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#has_fly_hole_size"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#has_bodycolor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#black"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#has_bodycolor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#brown"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#has_bodycolor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#red"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#has_bodycolor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#yellow"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label xml:lang="de">Veränderlicher Scheibenbock</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">phymatodes testaceus</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">https://www.wikidata.org/wiki/Q1315415</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#weicher_Nagekäfer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#weicher_Nagekäfer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Drywood_insects"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Fir_Sapwood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#GK1"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#GK2"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#GK3a"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#GK3b"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#GK4"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#GK5"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Insects"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Larch_Sapwood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Pine_Sapwood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Smooth_outlet_holes"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Spruce_Sapwood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#acyclic_action"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#load_bearing_structure_irrelevant"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#round"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#seldom"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#has_bodycolor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#brown"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#has_fly_hole_size"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</owl:hasValue>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label xml:lang="de">Weicher Nagekäfer</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">ernobius mollis</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">https://www.wikidata.org/wiki/Q602516</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/christian/ontologies/2021/4/wood_destroying_insects#gescheckter/bunter_Nagekäfer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/wood_destroying_insects#gescheckter/bunter_Nagekäfer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Douglas_fir_Heartwood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Douglas_fir_Sapwood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Fir_Heartwood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Fir_Sapwood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#GK4"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#GK5"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Insectclasses"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Insects"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Larch_Heartwood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Larch_Sapwood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Make_hearable_nagging_noise"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Oak_Heartwood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Oak_Sapwood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Pine_Heartwood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Pine_Sapwood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Roll-shaped"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Rottenwood_Insects"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Spruce_Heartwood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Spruce_Sapwood"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#acyclic_action"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#fine_and_dusty"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#load_bearing_structure_irrelevant"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#often"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#round"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#woodboring_beetle"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#has_bodycolor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#brown"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label xml:lang="de">Gescheckter/Bunter Nagekäfer</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Xestobium rufovillosum</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">https://www.wikidata.org/wiki/Q1074662</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Blauer_Scheibenbock"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Grubenhalsbock"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Hausbock"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Holzwespen"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Kapuzinerkäfer"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Rothalsbock"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Schusterbock"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Schwammholz-Nagekäfer"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Trotzkopf"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#brauner_Splintholzkäfer"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#gekämmter_Nagekäfer"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#gewöhnlicher_Nagekäfer"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#linierter_Splintholzkäfer"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#veränderlicher_Scheibenbock"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#weicher_Nagekäfer"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/wood_destroying_insects#gescheckter/bunter_Nagekäfer"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Holzwespen"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#brauner_Splintholzkäfer"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

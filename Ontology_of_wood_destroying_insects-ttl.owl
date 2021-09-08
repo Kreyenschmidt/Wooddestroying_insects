@@ -1,0 +1,1640 @@
+@prefix : <http://www.semanticweb.org/wooddestroying_insects> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix ns: <http://creativecommons.org/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix untitled-ontology-14: <http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#> .
+@base <http://www.semanticweb.org/christian/ontologies/2021/4/wood_destroying_insects> .
+
+<http://www.semanticweb.org/christian/ontologies/2021/4/wood_destroying_insects> rdf:type owl:Ontology ;
+                                                                                  ns:Licence """https://creativecommons.org/licenses/by/2.0/
+
+This Open Data is free to use. Please cite the ontology or the paper as literature."""@en ;
+                                                                                  dc:creator "Christian Kreyenschmidt, Jade University of applied science, Odenburg / Germany"@en ;
+                                                                                  dc:title "Ontologie holzzerstörender Insekten"@de ,
+                                                                                           "ontology of wood destroying insects"@en ;
+                                                                                  schema:dateCreated "2021-07-28"@en ;
+                                                                                  rdfs:comment "An Ontology about wood pests and their classification features"@en .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://creativecommons.org/ns#Licence
+ns:Licence rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/creator
+dc:creator rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/rights
+dc:rights rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+dc:title rdf:type owl:AnnotationProperty .
+
+
+###  http://schema.org/dateCreated
+schema:dateCreated rdf:type owl:AnnotationProperty .
+
+
+###  http://schema.org/license
+schema:license rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#action_needed
+untitled-ontology-14:action_needed rdf:type owl:ObjectProperty ;
+                                   rdfs:domain owl:Thing ;
+                                   rdfs:range untitled-ontology-14:cyclic_action ;
+                                   rdfs:comment "In the case of an infestation there is a need for action."@en ;
+                                   rdfs:label "action needed"@en .
+
+
+###  http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#has_bodycolor
+untitled-ontology-14:has_bodycolor rdf:type owl:ObjectProperty ;
+                                   rdfs:domain owl:Thing ;
+                                   rdfs:range untitled-ontology-14:Colors ;
+                                   rdfs:comment "Describes the bodycolor."@en ;
+                                   rdfs:label "has bodycolor"@en .
+
+
+###  http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#has_fecescolor
+untitled-ontology-14:has_fecescolor rdf:type owl:ObjectProperty ;
+                                    rdfs:domain owl:Thing ;
+                                    rdfs:range untitled-ontology-14:Colors ;
+                                    rdfs:comment "Describes the fecescolor."@en ;
+                                    rdfs:label "has fecescolor"@en .
+
+
+###  http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#has_fecesform
+untitled-ontology-14:has_fecesform rdf:type owl:ObjectProperty ;
+                                   rdfs:domain owl:Thing ;
+                                   rdfs:range untitled-ontology-14:feces ;
+                                   rdfs:comment "Describes the fecesform."@en ;
+                                   rdfs:label "has fecesform"@en .
+
+
+###  http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#has_flyholeform
+untitled-ontology-14:has_flyholeform rdf:type owl:ObjectProperty ;
+                                     rdfs:domain owl:Thing ;
+                                     rdfs:range untitled-ontology-14:Flyholeform ;
+                                     rdfs:comment "Describes the flyholeform."@en ;
+                                     rdfs:label "has flyholeform"@en .
+
+
+###  http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#has_larvacolor
+untitled-ontology-14:has_larvacolor rdf:type owl:ObjectProperty ;
+                                    rdfs:domain owl:Thing ;
+                                    rdfs:range untitled-ontology-14:Colors ;
+                                    rdfs:comment "Describes the larvacolor."@en ;
+                                    rdfs:label "has larvacolor"@en .
+
+
+###  http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#has_special_feature
+untitled-ontology-14:has_special_feature rdf:type owl:ObjectProperty ;
+                                         rdfs:domain owl:Thing ;
+                                         rdfs:range untitled-ontology-14:Special_Features ;
+                                         rdfs:comment "Describes a special feature of the insect."@en ;
+                                         rdfs:label "has special feature"@en .
+
+
+###  http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#has_wingcolor
+untitled-ontology-14:has_wingcolor rdf:type owl:ObjectProperty ;
+                                   rdfs:domain owl:Thing ;
+                                   rdfs:range untitled-ontology-14:Colors ;
+                                   rdfs:comment "Describes the wingcolor."@en ;
+                                   rdfs:label "has wingcolor"@en .
+
+
+###  http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#is_affecting
+untitled-ontology-14:is_affecting rdf:type owl:ObjectProperty ;
+                                  rdfs:domain owl:Thing ;
+                                  rdfs:range untitled-ontology-14:Wood ;
+                                  rdfs:comment "Describes the kind of wood that could get affected from the insect."@en ;
+                                  rdfs:label "is affecting"@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Bodylength_insect
+untitled-ontology-14:Bodylength_insect rdf:type owl:DatatypeProperty ;
+                                       rdfs:subPropertyOf owl:topDataProperty ;
+                                       rdfs:domain owl:Thing ;
+                                       rdfs:range xsd:double ;
+                                       rdfs:comment "Describes the bodylength of the insect."@en ;
+                                       rdfs:label "Bodylength"@en .
+
+
+###  http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#has_fly_hole_size
+untitled-ontology-14:has_fly_hole_size rdf:type owl:DatatypeProperty ;
+                                       rdfs:subPropertyOf owl:topDataProperty ;
+                                       rdfs:domain untitled-ontology-14:Insects ;
+                                       rdfs:range xsd:int ;
+                                       rdfs:comment "Describes the flyholesize of the insect. In case it is oval, the value discribes the length of the hole."@en ;
+                                       rdfs:label "flyholesize"@en .
+
+
+###  http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#has_larvalength
+untitled-ontology-14:has_larvalength rdf:type owl:DatatypeProperty ;
+                                     rdfs:subPropertyOf owl:topDataProperty ;
+                                     rdfs:domain owl:Thing ;
+                                     rdfs:range xsd:double ;
+                                     rdfs:comment "Describes the bodylength of the larva."@en ;
+                                     rdfs:label "Larvalength"@en .
+
+
+###  http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#need_wood_humidity
+untitled-ontology-14:need_wood_humidity rdf:type owl:DatatypeProperty ;
+                                        rdfs:subPropertyOf owl:topDataProperty ;
+                                        rdfs:domain owl:Thing ;
+                                        rdfs:range xsd:int ;
+                                        rdfs:comment "Describes the minimum wood humidity that is needed for the insect activity."@en ;
+                                        rdfs:label "need wood humidity"@en .
+
+
+###  http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#stay_for_generations
+untitled-ontology-14:stay_for_generations rdf:type owl:DatatypeProperty ;
+                                          rdfs:subPropertyOf owl:topDataProperty ;
+                                          rdfs:domain owl:Thing ;
+                                          rdfs:range xsd:int ;
+                                          rdfs:comment "Describes the generation tim the insects stay in the wood. This value is only important for cyclic insects."@en ;
+                                          rdfs:label "Stay for generations"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Alder_Heartwood
+untitled-ontology-14:Alder_Heartwood rdf:type owl:Class ;
+                                     rdfs:subClassOf untitled-ontology-14:Hardwood_Heartwood ;
+                                     rdfs:comment "Erle_Kernholz (deutsch)" ;
+                                     rdfs:label "Alder_Heartwood"@en ;
+                                     rdfs:seeAlso "https://www.wikidata.org/wiki/Q1355553" .
+
+
+###  http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Alder_Sapwood
+untitled-ontology-14:Alder_Sapwood rdf:type owl:Class ;
+                                   rdfs:subClassOf untitled-ontology-14:Hardwood_Sapwood ;
+                                   rdfs:comment "Erle_Splintholz (deutsch)" ;
+                                   rdfs:label "Alder_Sapwood"@en ;
+                                   rdfs:seeAlso "https://www.wikidata.org/wiki/Q1355553" .
+
+
+###  http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Ash_Heartwood
+untitled-ontology-14:Ash_Heartwood rdf:type owl:Class ;
+                                   rdfs:subClassOf untitled-ontology-14:Hardwood_Heartwood ;
+                                   rdfs:comment "Esche_Kernholz (deutsch)" ;
+                                   rdfs:label "Ash_Heartwood"@en ;
+                                   rdfs:seeAlso "https://www.wikidata.org/wiki/Q1367022" .
+
+
+###  http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Ash_Sapwood
+untitled-ontology-14:Ash_Sapwood rdf:type owl:Class ;
+                                 rdfs:subClassOf untitled-ontology-14:Hardwood_Sapwood ;
+                                 rdfs:comment "Esche_Splintholz (deutsch)" ;
+                                 rdfs:label "Ash_Sapwood"@en ;
+                                 rdfs:seeAlso "https://www.wikidata.org/wiki/Q1367022" .
+
+
+###  http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Beech_Heartwood
+untitled-ontology-14:Beech_Heartwood rdf:type owl:Class ;
+                                     rdfs:subClassOf untitled-ontology-14:Hardwood_Heartwood ;
+                                     rdfs:comment "Buche_Kernholz (deutsch)" ;
+                                     rdfs:label "Beech_Heartwood"@en ;
+                                     rdfs:seeAlso "https://www.wikidata.org/wiki/Q998316" .
+
+
+###  http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Beech_Sapwood
+untitled-ontology-14:Beech_Sapwood rdf:type owl:Class ;
+                                   rdfs:subClassOf untitled-ontology-14:Hardwood_Sapwood ;
+                                   rdfs:comment "Buche_Kernholz (deutsch)" ;
+                                   rdfs:label "Beech_Sapwood"@en ;
+                                   rdfs:seeAlso "https://www.wikidata.org/wiki/Q998316" .
+
+
+###  http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Chemicals
+untitled-ontology-14:Chemicals rdf:type owl:Class ;
+                               rdfs:subClassOf untitled-ontology-14:Treatment ;
+                               rdfs:comment "Wood preservative with preventive effectiveness against individual beetle species or against all wood-destroying insects."@en ;
+                               rdfs:label "Chemical"@en .
+
+
+###  http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Chestnut_Heartwood
+untitled-ontology-14:Chestnut_Heartwood rdf:type owl:Class ;
+                                        rdfs:subClassOf untitled-ontology-14:Hardwood_Heartwood ;
+                                        rdfs:comment "Kastanie_Kernholz (deutsch)" ;
+                                        rdfs:label "Chestnut_Heartwood"@en ;
+                                        rdfs:seeAlso "https://www.wikidata.org/wiki/Q28870512" .
+
+
+###  http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Chestnut_Sapwood
+untitled-ontology-14:Chestnut_Sapwood rdf:type owl:Class ;
+                                      rdfs:subClassOf untitled-ontology-14:Hardwood_Sapwood ;
+                                      rdfs:comment "Kastanie_Splintholz (deutsch)" ;
+                                      rdfs:label "Chestnut_Sapwood"@en ;
+                                      rdfs:seeAlso "https://www.wikidata.org/wiki/Q28870512" .
+
+
+###  http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Colors
+untitled-ontology-14:Colors rdf:type owl:Class ;
+                            rdfs:subClassOf untitled-ontology-14:Damage_characteristics ;
+                            rdfs:comment "Discribes the spectrum of the insect related colors."@en ;
+                            rdfs:label "Colors"@en .
+
+
+###  http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Cylinder_form
+untitled-ontology-14:Cylinder_form rdf:type owl:Class ;
+                                   rdfs:subClassOf untitled-ontology-14:feces ;
+                                   rdfs:comment "Fecal particles are cylindrical and cut straight at the ends."@en ;
+                                   rdfs:label "cylindrical shaped"@en .
+
+
+###  http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Damage_characteristics
+untitled-ontology-14:Damage_characteristics rdf:type owl:Class ;
+                                            rdfs:subClassOf owl:Thing ;
+                                            rdfs:comment "Characteristics and attributes of the damage location and the insects features."@en ;
+                                            rdfs:label "Damage characteristics"@en .
+
+
+###  http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Douglas_fir_Heartwood
+untitled-ontology-14:Douglas_fir_Heartwood rdf:type owl:Class ;
+                                           rdfs:subClassOf untitled-ontology-14:Softwood_Heartwood ;
+                                           rdfs:comment "Douglasie_Kernholz (deutsch)" ;
+                                           rdfs:label "Douglas Fir_Heartwood"@en ;
+                                           rdfs:seeAlso "https://www.wikidata.org/wiki/Q13574159" .
+
+
+###  http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Douglas_fir_Sapwood
+untitled-ontology-14:Douglas_fir_Sapwood rdf:type owl:Class ;
+                                         rdfs:subClassOf untitled-ontology-14:Softwood_Sapwood ;
+                                         rdfs:comment "Douglasie_Splintholz (deutsch)" ;
+                                         rdfs:label "Douglas Fir_Sapwood"@en ;
+                                         rdfs:seeAlso "https://www.wikidata.org/wiki/Q13574159" .
+
+
+###  http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Drywood_insects
+untitled-ontology-14:Drywood_insects rdf:type owl:Class ;
+                                     rdfs:subClassOf untitled-ontology-14:Insectclasses ;
+                                     rdfs:comment "Affects dry and semi-dry wood."@en ;
+                                     rdfs:label "Drywood insects"@en .
+
+
+###  http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Exchange
+untitled-ontology-14:Exchange rdf:type owl:Class ;
+                              rdfs:subClassOf untitled-ontology-14:Treatment ;
+                              rdfs:comment "Replacement and reinforcement of severely damaged and unsound wooden elements."@en ;
+                              rdfs:label "Exchange"@en .
+
+
+###  http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Fir_Heartwood
+untitled-ontology-14:Fir_Heartwood rdf:type owl:Class ;
+                                   rdfs:subClassOf untitled-ontology-14:Softwood_Heartwood ;
+                                   rdfs:comment "Tanne_Kernholz (deutsch)" ;
+                                   rdfs:label "Fir_Heartwood"@en ;
+                                   rdfs:seeAlso "https://www.wikidata.org/wiki/Q25350" .
+
+
+###  http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Fir_Sapwood
+untitled-ontology-14:Fir_Sapwood rdf:type owl:Class ;
+                                 rdfs:subClassOf untitled-ontology-14:Softwood_Sapwood ;
+                                 rdfs:comment "Tanne_Splintholz (deutsch)" ;
+                                 rdfs:label "Fir_Sapwood"@en ;
+                                 rdfs:seeAlso "https://www.wikidata.org/wiki/Q25350" .
+
+
+###  http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Fly_holes
+untitled-ontology-14:Fly_holes rdf:type owl:Class ;
+                               rdfs:subClassOf untitled-ontology-14:Damage_characteristics ;
+                               rdfs:comment "Discribes the form and features of the flyholes."@en ;
+                               rdfs:label "flyhole attributes"@en .
+
+
+###  http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Flyholeform
+untitled-ontology-14:Flyholeform rdf:type owl:Class ;
+                                 rdfs:subClassOf untitled-ontology-14:Fly_holes ;
+                                 rdfs:comment "Discribes the form of the flyholes."@en ;
+                                 rdfs:label "flyholeform"@en .
+
+
+###  http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Freshwood_insects
+untitled-ontology-14:Freshwood_insects rdf:type owl:Class ;
+                                       rdfs:subClassOf untitled-ontology-14:Insectclasses ;
+                                       rdfs:comment "Occur on live tree or freshly felled trunks."@en ;
+                                       rdfs:label "Freshwood insects"@en .
+
+
+###  http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Fringed_outlet_holes
+untitled-ontology-14:Fringed_outlet_holes rdf:type owl:Class ;
+                                          rdfs:subClassOf untitled-ontology-14:Fly_holes ;
+                                          rdfs:comment "The outlet of the fly hole is fringed."@en ;
+                                          rdfs:label "fringed"@en .
+
+
+###  http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#GK0
+untitled-ontology-14:GK0 rdf:type owl:Class ;
+                         rdfs:subClassOf untitled-ontology-14:Hazard_class_according_to_DIN_68800-1 ;
+                         rdfs:comment "Wood or wood product under roof, not exposed to weathering and no humidification, the risk of structural damage by insects can be excluded."@en ;
+                         rdfs:label "DC0"@en .
+
+
+###  http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#GK1
+untitled-ontology-14:GK1 rdf:type owl:Class ;
+                         rdfs:subClassOf untitled-ontology-14:Hazard_class_according_to_DIN_68800-1 ;
+                         rdfs:comment "Wood or wood product under roof, not exposed to weathering and not humidified."@en ;
+                         rdfs:label "DC1"@en .
+
+
+###  http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#GK2
+untitled-ontology-14:GK2 rdf:type owl:Class ;
+                         rdfs:subClassOf untitled-ontology-14:Hazard_class_according_to_DIN_68800-1 ;
+                         rdfs:comment "Wood or wood product under roof, not exposed to weathering, high ambient humidity can lead to le-gual but not permanent moistening."@en ;
+                         rdfs:label "DC2"@en .
+
+
+###  http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#GK3a
+untitled-ontology-14:GK3a rdf:type owl:Class ;
+                          rdfs:subClassOf untitled-ontology-14:Hazard_class_according_to_DIN_68800-1 ;
+                          rdfs:comment "Wood or wood product not under roof, with weathering, but without constant contact with soil or water, accumulation of water in the wood, even spatially limited, is not to be expected due to rapid re-drying."@en ;
+                          rdfs:label "DC3a"@en .
+
+
+###  http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#GK3b
+untitled-ontology-14:GK3b rdf:type owl:Class ;
+                          rdfs:subClassOf untitled-ontology-14:Hazard_class_according_to_DIN_68800-1 ;
+                          rdfs:comment "Wood or wood product not under roof, with weathering, but without constant contact with soil or water, accumulation of water in the wood, also spatially limited, to be expected."@en ;
+                          rdfs:label "DC3b"@en .
+
+
+###  http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#GK4
+untitled-ontology-14:GK4 rdf:type owl:Class ;
+                         rdfs:subClassOf untitled-ontology-14:Hazard_class_according_to_DIN_68800-1 ;
+                         rdfs:comment "Wood or wood product in contact with soil or fresh water and thus mainly to permanently exposed to moisture during moderate to heavy use."@en ;
+                         rdfs:label "DC4"@en .
+
+
+###  http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#GK5
+untitled-ontology-14:GK5 rdf:type owl:Class ;
+                         rdfs:subClassOf untitled-ontology-14:Hazard_class_according_to_DIN_68800-1 ;
+                         rdfs:comment "Wood or wood product, constantly exposed to seawater."@en ;
+                         rdfs:label "DC5"@en .
+
+
+###  http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Gas_methods
+untitled-ontology-14:Gas_methods rdf:type owl:Class ;
+                                 rdfs:subClassOf untitled-ontology-14:Treatment ;
+                                 rdfs:comment "The fumigation process is based on the application of toxic gases, while the control with modified atmospheres is based on the application of asphyxiating gases."@en ;
+                                 rdfs:label "Gas method"@en .
+
+
+###  http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Hardwood
+untitled-ontology-14:Hardwood rdf:type owl:Class ;
+                              rdfs:subClassOf untitled-ontology-14:Wood ;
+                              rdfs:comment "Laubholz (deutsch)" ;
+                              rdfs:label "Hardwood"@en ;
+                              rdfs:seeAlso "https://www.wikidata.org/wiki/Q2266509" .
+
+
+###  http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Hardwood_Heartwood
+untitled-ontology-14:Hardwood_Heartwood rdf:type owl:Class ;
+                                        rdfs:subClassOf untitled-ontology-14:Hardwood ;
+                                        rdfs:label "Hardwood heartwood"@en .
+
+
+###  http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Hardwood_Sapwood
+untitled-ontology-14:Hardwood_Sapwood rdf:type owl:Class ;
+                                      rdfs:subClassOf untitled-ontology-14:Hardwood ;
+                                      rdfs:label "Hardwood sapwood"@en .
+
+
+###  http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Hazard_class_according_to_DIN_68800-1
+untitled-ontology-14:Hazard_class_according_to_DIN_68800-1 rdf:type owl:Class ;
+                                                           rdfs:subClassOf owl:Thing ;
+                                                           rdfs:comment "Danger classes (DC) - description of general conditions of use as well as possible hazards/stresses and moisture content of the installed wood. (According to the DIN 68800-1)"@en ;
+                                                           rdfs:label "Danger classes" .
+
+
+###  http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Hot_Air
+untitled-ontology-14:Hot_Air rdf:type owl:Class ;
+                             rdfs:subClassOf untitled-ontology-14:Treatment ;
+                             rdfs:comment """The hot-air method as a standard sanitation method for combating wood-destroying insects belongs to the thermal methods.
+The hot air process does not protect the treated wood from new infestation."""@en ;
+                             rdfs:label "Hot air method"@en .
+
+
+###  http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Injektion
+untitled-ontology-14:Injektion rdf:type owl:Class ;
+                               rdfs:subClassOf untitled-ontology-14:Treatment ;
+                               rdfs:comment "Treatment of the wooden structure with borehole impregnation or borehole pressure impregnation with wood injectors"@en ;
+                               rdfs:label "Injection"@en .
+
+
+###  http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Insectclasses
+untitled-ontology-14:Insectclasses rdf:type owl:Class ;
+                                   rdfs:subClassOf untitled-ontology-14:Insects ;
+                                   rdfs:comment "Describes superordinate classes that describe characteristics, behavior, and distribution of insects."@en ;
+                                   rdfs:label "Insectclasses"@en .
+
+
+###  http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Insects
+untitled-ontology-14:Insects rdf:type owl:Class ;
+                             rdfs:subClassOf owl:Thing ;
+                             rdfs:label "Insects characteristics"@en ;
+                             owl:incompatibleWith "List of all important wood destroying insects."@en .
+
+
+###  http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Larch_Heartwood
+untitled-ontology-14:Larch_Heartwood rdf:type owl:Class ;
+                                     rdfs:subClassOf untitled-ontology-14:Softwood_Heartwood ;
+                                     rdfs:comment "Lärche_Kernholz (deutsch)" ;
+                                     rdfs:label "Larch_Heartwood"@en ;
+                                     rdfs:seeAlso "https://www.wikidata.org/wiki/Q1879281" .
+
+
+###  http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Larch_Sapwood
+untitled-ontology-14:Larch_Sapwood rdf:type owl:Class ;
+                                   rdfs:subClassOf untitled-ontology-14:Softwood_Sapwood ;
+                                   rdfs:comment "Lärche_Splintholz (deutsch)" ;
+                                   rdfs:label "Larch_Sapwood"@en ;
+                                   rdfs:seeAlso "https://www.wikidata.org/wiki/Q1879281" .
+
+
+###  http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Longhorn_beetle
+untitled-ontology-14:Longhorn_beetle rdf:type owl:Class ;
+                                     rdfs:subClassOf untitled-ontology-14:Insectclasses ;
+                                     rdfs:comment "Horn-like arranged antennae. Larvae cylindrical flattened. Larval color white, yellowish, ivory. Thickened cull thighs."^^rdfs:Literal ;
+                                     rdfs:label "Longhorn beetle"@en .
+
+
+###  http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Make_hearable_nagging_noise
+untitled-ontology-14:Make_hearable_nagging_noise rdf:type owl:Class ;
+                                                 rdfs:subClassOf untitled-ontology-14:Insectclasses ;
+                                                 rdfs:comment "Is is possible to hear nagging noises fom the insects."@en ;
+                                                 rdfs:label "Making hearable noise"@en .
+
+
+###  http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Oak_Heartwood
+untitled-ontology-14:Oak_Heartwood rdf:type owl:Class ;
+                                   rdfs:subClassOf untitled-ontology-14:Hardwood_Heartwood ;
+                                   rdfs:comment "Eiche_Kernholz (deutsch)" ;
+                                   rdfs:label "Oak_Heartwood"@en ;
+                                   rdfs:seeAlso "https://www.wikidata.org/wiki/Q2075708" .
+
+
+###  http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Oak_Sapwood
+untitled-ontology-14:Oak_Sapwood rdf:type owl:Class ;
+                                 rdfs:subClassOf untitled-ontology-14:Hardwood_Sapwood ;
+                                 rdfs:comment "Eiche_Splintholz (deutsch)" ;
+                                 rdfs:label "Oak_Sapwood"@en ;
+                                 rdfs:seeAlso "https://www.wikidata.org/wiki/Q2075708" .
+
+
+###  http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Pine_Heartwood
+untitled-ontology-14:Pine_Heartwood rdf:type owl:Class ;
+                                    rdfs:subClassOf untitled-ontology-14:Softwood_Heartwood ;
+                                    rdfs:comment "Kiefer_Kernholz (deutsch)" ;
+                                    rdfs:label "Pine_Heartwood"@en ;
+                                    rdfs:seeAlso "https://www.wikidata.org/wiki/Q1503211" .
+
+
+###  http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Pine_Sapwood
+untitled-ontology-14:Pine_Sapwood rdf:type owl:Class ;
+                                  rdfs:subClassOf untitled-ontology-14:Softwood_Sapwood ;
+                                  rdfs:comment "Kiefer_Splintholz (deutsch)" ;
+                                  rdfs:label "Pine_Sapwood"@en ;
+                                  rdfs:seeAlso "https://www.wikidata.org/wiki/Q1503211" .
+
+
+###  http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Redbeech_Heartwood
+untitled-ontology-14:Redbeech_Heartwood rdf:type owl:Class ;
+                                        rdfs:subClassOf untitled-ontology-14:Hardwood_Heartwood ;
+                                        rdfs:comment "Rotbuche_Kernholz (deutsch)" ;
+                                        rdfs:label "Redbeech_Heartwood"@en ;
+                                        rdfs:seeAlso "https://www.wikidata.org/wiki/Q146149" .
+
+
+###  http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Redbeech_Sapwood
+untitled-ontology-14:Redbeech_Sapwood rdf:type owl:Class ;
+                                      rdfs:subClassOf untitled-ontology-14:Hardwood_Sapwood ;
+                                      rdfs:comment "Rotbuche_Splintholz (deutsch)" ;
+                                      rdfs:label "Redbeech_Sapwood"@en ;
+                                      rdfs:seeAlso "https://www.wikidata.org/wiki/Q146149" .
+
+
+###  http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Report_is_required
+untitled-ontology-14:Report_is_required rdf:type owl:Class ;
+                                        rdfs:subClassOf untitled-ontology-14:Damage_characteristics ;
+                                        rdfs:comment "The classification of this insect is to report to the local authorities."@en ;
+                                        rdfs:label "reportable_insect"@en .
+
+
+###  http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Roll-shaped
+untitled-ontology-14:Roll-shaped rdf:type owl:Class ;
+                                 rdfs:subClassOf untitled-ontology-14:feces ;
+                                 rdfs:comment "Feces pills are lenticular."@en ;
+                                 rdfs:label "roll-shaped"@en .
+
+
+###  http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Rottenwood_Insects
+untitled-ontology-14:Rottenwood_Insects rdf:type owl:Class ;
+                                        rdfs:subClassOf untitled-ontology-14:Insectclasses ;
+                                        rdfs:comment "Primarily found in wood pre-damaged by fungi. Suspect hidden fungal damage when found."^^rdfs:Literal ;
+                                        rdfs:label "Rottenwood insect"@en .
+
+
+###  http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Sapwood_beetle
+untitled-ontology-14:Sapwood_beetle rdf:type owl:Class ;
+                                    rdfs:subClassOf untitled-ontology-14:Insectclasses ;
+                                    rdfs:comment "This insects are only affecting sapwood of hardwood."@en ;
+                                    rdfs:label "Sapwood beetle"@en .
+
+
+###  http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Smooth_outlet_holes
+untitled-ontology-14:Smooth_outlet_holes rdf:type owl:Class ;
+                                         rdfs:subClassOf untitled-ontology-14:Fly_holes ;
+                                         rdfs:comment "The outlet of the fly hole is smooth."@en ;
+                                         rdfs:label "smooth"@en .
+
+
+###  http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Softwood
+untitled-ontology-14:Softwood rdf:type owl:Class ;
+                              rdfs:subClassOf untitled-ontology-14:Wood ;
+                              rdfs:comment "Nadelholz (deutsch)" ;
+                              rdfs:label "Softwood"@en ;
+                              rdfs:seeAlso "https://www.wikidata.org/wiki/Q252108" .
+
+
+###  http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Softwood_Heartwood
+untitled-ontology-14:Softwood_Heartwood rdf:type owl:Class ;
+                                        rdfs:subClassOf untitled-ontology-14:Softwood ;
+                                        rdfs:label "Softwood heartwood"@en .
+
+
+###  http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Softwood_Sapwood
+untitled-ontology-14:Softwood_Sapwood rdf:type owl:Class ;
+                                      rdfs:subClassOf untitled-ontology-14:Softwood ;
+                                      rdfs:label "Softwood sapwood"@en .
+
+
+###  http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Special_Features
+untitled-ontology-14:Special_Features rdf:type owl:Class ;
+                                      rdfs:subClassOf untitled-ontology-14:Damage_characteristics ;
+                                      rdfs:comment "Describes a unique feature of an insect."@en ;
+                                      rdfs:label "Special features"@en .
+
+
+###  http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Spruce_Heartwood
+untitled-ontology-14:Spruce_Heartwood rdf:type owl:Class ;
+                                      rdfs:subClassOf untitled-ontology-14:Softwood_Heartwood ;
+                                      rdfs:comment "Fichte_Kernholz (deutsch)" ;
+                                      rdfs:label "Spruce_Heartwood"@en ;
+                                      rdfs:seeAlso "https://www.wikidata.org/wiki/Q26782" .
+
+
+###  http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Spruce_Sapwood
+untitled-ontology-14:Spruce_Sapwood rdf:type owl:Class ;
+                                    rdfs:subClassOf untitled-ontology-14:Softwood_Sapwood ;
+                                    rdfs:comment "Fichte_Splintholz (deutsch)" ;
+                                    rdfs:label "Spruce_Sapwood"@en ;
+                                    rdfs:seeAlso "https://www.wikidata.org/wiki/Q26782" .
+
+
+###  http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Treatment
+untitled-ontology-14:Treatment rdf:type owl:Class ;
+                               rdfs:subClassOf untitled-ontology-14:load_bearing_structure_relevant ;
+                               rdfs:comment "Treatment_according_to_DIN_68800-4"@en ;
+                               rdfs:label "Treatment"@en .
+
+
+###  http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Wood
+untitled-ontology-14:Wood rdf:type owl:Class ;
+                          rdfs:subClassOf owl:Thing ;
+                          rdfs:comment "Fibrous material from trees or other plants."@en ;
+                          rdfs:label "Wood" ;
+                          rdfs:seeAlso "https://www.wikidata.org/wiki/Q287" .
+
+
+###  http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#acyclic_action
+untitled-ontology-14:acyclic_action rdf:type owl:Class ;
+                                    rdfs:subClassOf untitled-ontology-14:insect_cycle ;
+                                    rdfs:comment "Insects of this class are usually affecting the wood for one period. After hatching, the insects fly out and leave the structure."@en ;
+                                    rdfs:label "Acyclic"@en .
+
+
+###  http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#black
+untitled-ontology-14:black rdf:type owl:Class ;
+                           rdfs:subClassOf untitled-ontology-14:Colors ;
+                           rdfs:comment "Color type."@en ;
+                           rdfs:label "Black"@en ;
+                           rdfs:seeAlso "https://www.wikidata.org/wiki/Q23445" .
+
+
+###  http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#blue
+untitled-ontology-14:blue rdf:type owl:Class ;
+                          rdfs:subClassOf untitled-ontology-14:Colors ;
+                          rdfs:comment "Color type."@en ;
+                          rdfs:label "Blue"@en ;
+                          rdfs:seeAlso "https://www.wikidata.org/wiki/Q1088" .
+
+
+###  http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#bronze
+untitled-ontology-14:bronze rdf:type owl:Class ;
+                            rdfs:subClassOf untitled-ontology-14:Colors ;
+                            rdfs:comment "Color type."@en ;
+                            rdfs:label "Bronze"@en ;
+                            rdfs:seeAlso "https://www.wikidata.org/wiki/Q2778382" .
+
+
+###  http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#brown
+untitled-ontology-14:brown rdf:type owl:Class ;
+                           rdfs:subClassOf untitled-ontology-14:Colors ;
+                           rdfs:comment "Color type."@en ;
+                           rdfs:label "Brown"@en ;
+                           rdfs:seeAlso "https://www.wikidata.org/wiki/Q47071" .
+
+
+###  http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#cyclic_action
+untitled-ontology-14:cyclic_action rdf:type owl:Class ;
+                                   rdfs:subClassOf untitled-ontology-14:insect_cycle ;
+                                   rdfs:comment "Insects of this class are usually affecting the wood for more than one period. After hatching, the insects direcly mate and lay eggs in the same structure."@en ;
+                                   rdfs:label "Cyclic"@en .
+
+
+###  http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#feces
+untitled-ontology-14:feces rdf:type owl:Class ;
+                           rdfs:subClassOf untitled-ontology-14:Damage_characteristics ;
+                           rdfs:comment "Describes the residues from insect feeding activities."@en ;
+                           rdfs:label "Feces"@en .
+
+
+###  http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#fine_and_dusty
+untitled-ontology-14:fine_and_dusty rdf:type owl:Class ;
+                                    rdfs:subClassOf untitled-ontology-14:feces ;
+                                    rdfs:comment "Fine wood flour. The fecal pills have partially long drawn ends."@en ;
+                                    rdfs:label "fine and dusty"@en .
+
+
+###  http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#frequency
+untitled-ontology-14:frequency rdf:type owl:Class ;
+                               rdfs:subClassOf untitled-ontology-14:Insectclasses ;
+                               rdfs:comment "Describes the freqeucy of the insect."@en ;
+                               rdfs:label "Frequency"@en .
+
+
+###  http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#insect_cycle
+untitled-ontology-14:insect_cycle rdf:type owl:Class ;
+                                  rdfs:subClassOf untitled-ontology-14:Insectclasses ;
+                                  rdfs:comment "Discribes the cycle behavior of the insect."@en ;
+                                  rdfs:label "Insect cycle"@en .
+
+
+###  http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#ivory
+untitled-ontology-14:ivory rdf:type owl:Class ;
+                           rdfs:subClassOf untitled-ontology-14:Colors ;
+                           rdfs:comment "Color type."@en ;
+                           rdfs:label "Ivory"@en ;
+                           rdfs:seeAlso "https://www.wikidata.org/wiki/Q1358981" .
+
+
+###  http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#light_yellow
+untitled-ontology-14:light_yellow rdf:type owl:Class ;
+                                  rdfs:subClassOf untitled-ontology-14:Colors ;
+                                  rdfs:comment "Color type."@en ;
+                                  rdfs:label "Light Yellow"@en ;
+                                  rdfs:seeAlso "https://www.wikidata.org/wiki/Q68223248" .
+
+
+###  http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#load_bearing_structure_irrelevant
+untitled-ontology-14:load_bearing_structure_irrelevant rdf:type owl:Class ;
+                                                       rdfs:subClassOf untitled-ontology-14:Damage_characteristics ;
+                                                       owl:disjointWith untitled-ontology-14:load_bearing_structure_relevant ;
+                                                       rdfs:comment "The damage is not relevant for load bearing structure."@en ;
+                                                       rdfs:label "bearing_irrelevant"@en .
+
+
+###  http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#load_bearing_structure_relevant
+untitled-ontology-14:load_bearing_structure_relevant rdf:type owl:Class ;
+                                                     rdfs:subClassOf untitled-ontology-14:Damage_characteristics ;
+                                                     rdfs:comment "The damage is relevant for load bearing structure."@en ;
+                                                     rdfs:label "bearing_relevant"@en .
+
+
+###  http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#often
+untitled-ontology-14:often rdf:type owl:Class ;
+                           rdfs:subClassOf untitled-ontology-14:frequency ;
+                           rdfs:comment "Insects of this class are often found as wooddestroyer."@en ;
+                           rdfs:label "Often found"@en .
+
+
+###  http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#oval
+untitled-ontology-14:oval rdf:type owl:Class ;
+                          rdfs:subClassOf untitled-ontology-14:Flyholeform ;
+                          rdfs:comment "The flyhole is oval."@en ;
+                          rdfs:label "oval"@en .
+
+
+###  http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#red
+untitled-ontology-14:red rdf:type owl:Class ;
+                         rdfs:subClassOf untitled-ontology-14:Colors ;
+                         rdfs:comment "Color type."@en ;
+                         rdfs:label "Red"@en ;
+                         rdfs:seeAlso "https://www.wikidata.org/wiki/Q3142" .
+
+
+###  http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#round
+untitled-ontology-14:round rdf:type owl:Class ;
+                           rdfs:subClassOf untitled-ontology-14:Flyholeform ;
+                           rdfs:comment "The flyhole is round."@en ;
+                           rdfs:label "round"@en .
+
+
+###  http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#seldom
+untitled-ontology-14:seldom rdf:type owl:Class ;
+                            rdfs:subClassOf untitled-ontology-14:frequency ;
+                            rdfs:comment "Insects of this class are seldom found as wooddestroyer."@en ;
+                            rdfs:label "Seldom found"@en .
+
+
+###  http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#unknown_insect
+untitled-ontology-14:unknown_insect rdf:type owl:Class ;
+                                    owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                          owl:onProperty untitled-ontology-14:has_bodycolor ;
+                                                          owl:someValuesFrom untitled-ontology-14:brown
+                                                        ] ;
+                                    rdfs:subClassOf owl:Thing ;
+                                    rdfs:comment "In this class you can describe your finding about the damage. Plaese write the finings in the class \"Equivalent To\" and the start the reasoner!"@en ;
+                                    rdfs:label "Reasoning your damage"@en .
+
+
+###  http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#white
+untitled-ontology-14:white rdf:type owl:Class ;
+                           rdfs:subClassOf untitled-ontology-14:Colors ;
+                           rdfs:comment "Color type."@en ;
+                           rdfs:label "White"@en ;
+                           rdfs:seeAlso "https://www.wikidata.org/wiki/Q23444" .
+
+
+###  http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#woodboring_beetle
+untitled-ontology-14:woodboring_beetle rdf:type owl:Class ;
+                                       rdfs:subClassOf untitled-ontology-14:Insectclasses ;
+                                       rdfs:comment "All anobia are small beetles with brownish color with a typical neck shield that covers the neck like a hood.  The exit holes are circular with a diameter of 1.5 - 3.5mm. The larvae are white and have three pairs of legs. Depending on the species, the beetles live in dry hardwood and/or hardwood as well as moist fungus-infested wood."@en ;
+                                       rdfs:label "Woodboring beetle"@en .
+
+
+###  http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#yellow
+untitled-ontology-14:yellow rdf:type owl:Class ;
+                            rdfs:subClassOf untitled-ontology-14:Colors ;
+                            rdfs:comment "Color type."@en ;
+                            rdfs:label "Yellow"@en ;
+                            rdfs:seeAlso "https://www.wikidata.org/wiki/Q943" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Blauer_Scheibenbock
+untitled-ontology-14:Blauer_Scheibenbock rdf:type owl:NamedIndividual ,
+                                                  untitled-ontology-14:Douglas_fir_Sapwood ,
+                                                  untitled-ontology-14:Fir_Sapwood ,
+                                                  untitled-ontology-14:Freshwood_insects ,
+                                                  untitled-ontology-14:GK4 ,
+                                                  untitled-ontology-14:GK5 ,
+                                                  untitled-ontology-14:Insectclasses ,
+                                                  untitled-ontology-14:Insects ,
+                                                  untitled-ontology-14:Larch_Sapwood ,
+                                                  untitled-ontology-14:Longhorn_beetle ,
+                                                  untitled-ontology-14:Pine_Sapwood ,
+                                                  untitled-ontology-14:Smooth_outlet_holes ,
+                                                  untitled-ontology-14:Spruce_Sapwood ,
+                                                  untitled-ontology-14:acyclic_action ,
+                                                  untitled-ontology-14:load_bearing_structure_irrelevant ,
+                                                  untitled-ontology-14:often ,
+                                                  untitled-ontology-14:oval ,
+                                                  [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty untitled-ontology-14:has_fly_hole_size ;
+                                                                           owl:hasValue 4
+                                                                         ]
+                                                                         [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty untitled-ontology-14:has_fly_hole_size ;
+                                                                           owl:hasValue 5
+                                                                         ]
+                                                                         [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty untitled-ontology-14:has_fly_hole_size ;
+                                                                           owl:hasValue 6
+                                                                         ]
+                                                                       ) ;
+                                                    rdf:type owl:Class
+                                                  ] ,
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty untitled-ontology-14:has_bodycolor ;
+                                                    owl:someValuesFrom untitled-ontology-14:blue
+                                                  ] ;
+                                         rdfs:label "Blauer Scheibenbock"@de ,
+                                                    "Callidium violaceum"^^rdfs:Literal ;
+                                         rdfs:seeAlso "https://www.wikidata.org/wiki/Q748359"^^rdfs:Literal .
+
+
+###  http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Grubenhalsbock
+untitled-ontology-14:Grubenhalsbock rdf:type owl:NamedIndividual ,
+                                             untitled-ontology-14:Douglas_fir_Heartwood ,
+                                             untitled-ontology-14:Douglas_fir_Sapwood ,
+                                             untitled-ontology-14:Fir_Heartwood ,
+                                             untitled-ontology-14:Fir_Sapwood ,
+                                             untitled-ontology-14:Freshwood_insects ,
+                                             untitled-ontology-14:Fringed_outlet_holes ,
+                                             untitled-ontology-14:GK4 ,
+                                             untitled-ontology-14:GK5 ,
+                                             untitled-ontology-14:Insects ,
+                                             untitled-ontology-14:Larch_Heartwood ,
+                                             untitled-ontology-14:Larch_Sapwood ,
+                                             untitled-ontology-14:Longhorn_beetle ,
+                                             untitled-ontology-14:Pine_Heartwood ,
+                                             untitled-ontology-14:Pine_Sapwood ,
+                                             untitled-ontology-14:Smooth_outlet_holes ,
+                                             untitled-ontology-14:Spruce_Heartwood ,
+                                             untitled-ontology-14:Spruce_Sapwood ,
+                                             untitled-ontology-14:acyclic_action ,
+                                             untitled-ontology-14:load_bearing_structure_irrelevant ,
+                                             untitled-ontology-14:oval ,
+                                             untitled-ontology-14:seldom ,
+                                             [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                      owl:onProperty untitled-ontology-14:has_fly_hole_size ;
+                                                                      owl:hasValue 10
+                                                                    ]
+                                                                    [ rdf:type owl:Restriction ;
+                                                                      owl:onProperty untitled-ontology-14:has_fly_hole_size ;
+                                                                      owl:hasValue 11
+                                                                    ]
+                                                                    [ rdf:type owl:Restriction ;
+                                                                      owl:onProperty untitled-ontology-14:has_fly_hole_size ;
+                                                                      owl:hasValue 12
+                                                                    ]
+                                                                    [ rdf:type owl:Restriction ;
+                                                                      owl:onProperty untitled-ontology-14:has_fly_hole_size ;
+                                                                      owl:hasValue 6
+                                                                    ]
+                                                                    [ rdf:type owl:Restriction ;
+                                                                      owl:onProperty untitled-ontology-14:has_fly_hole_size ;
+                                                                      owl:hasValue 7
+                                                                    ]
+                                                                    [ rdf:type owl:Restriction ;
+                                                                      owl:onProperty untitled-ontology-14:has_fly_hole_size ;
+                                                                      owl:hasValue 8
+                                                                    ]
+                                                                    [ rdf:type owl:Restriction ;
+                                                                      owl:onProperty untitled-ontology-14:has_fly_hole_size ;
+                                                                      owl:hasValue 9
+                                                                    ]
+                                                                  ) ;
+                                               rdf:type owl:Class
+                                             ] ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty untitled-ontology-14:has_bodycolor ;
+                                               owl:someValuesFrom untitled-ontology-14:brown
+                                             ] ;
+                                    rdfs:label "Criocephalus rusticus"^^rdfs:Literal ,
+                                               "Grubenhalsbock"@de ;
+                                    rdfs:seeAlso "https://www.wikidata.org/wiki/Q1265892"^^rdfs:Literal .
+
+
+###  http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Hausbock
+untitled-ontology-14:Hausbock rdf:type owl:NamedIndividual ,
+                                       untitled-ontology-14:Cylinder_form ,
+                                       untitled-ontology-14:Drywood_insects ,
+                                       untitled-ontology-14:Fir_Sapwood ,
+                                       untitled-ontology-14:Fringed_outlet_holes ,
+                                       untitled-ontology-14:GK1 ,
+                                       untitled-ontology-14:GK2 ,
+                                       untitled-ontology-14:GK3a ,
+                                       untitled-ontology-14:GK3b ,
+                                       untitled-ontology-14:GK4 ,
+                                       untitled-ontology-14:GK5 ,
+                                       untitled-ontology-14:Insectclasses ,
+                                       untitled-ontology-14:Insects ,
+                                       untitled-ontology-14:Larch_Sapwood ,
+                                       untitled-ontology-14:Longhorn_beetle ,
+                                       untitled-ontology-14:Make_hearable_nagging_noise ,
+                                       untitled-ontology-14:Pine_Sapwood ,
+                                       untitled-ontology-14:Report_is_required ,
+                                       untitled-ontology-14:Smooth_outlet_holes ,
+                                       untitled-ontology-14:cyclic_action ,
+                                       untitled-ontology-14:fine_and_dusty ,
+                                       untitled-ontology-14:load_bearing_structure_irrelevant ,
+                                       untitled-ontology-14:often ,
+                                       untitled-ontology-14:oval ,
+                                       [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                owl:onProperty untitled-ontology-14:has_fly_hole_size ;
+                                                                owl:hasValue 4
+                                                              ]
+                                                              [ rdf:type owl:Restriction ;
+                                                                owl:onProperty untitled-ontology-14:has_fly_hole_size ;
+                                                                owl:hasValue 5
+                                                              ]
+                                                              [ rdf:type owl:Restriction ;
+                                                                owl:onProperty untitled-ontology-14:has_fly_hole_size ;
+                                                                owl:hasValue 6
+                                                              ]
+                                                              [ rdf:type owl:Restriction ;
+                                                                owl:onProperty untitled-ontology-14:has_fly_hole_size ;
+                                                                owl:hasValue 7
+                                                              ]
+                                                            ) ;
+                                         rdf:type owl:Class
+                                       ] ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty untitled-ontology-14:has_bodycolor ;
+                                         owl:someValuesFrom untitled-ontology-14:black
+                                       ] ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty untitled-ontology-14:has_bodycolor ;
+                                         owl:someValuesFrom untitled-ontology-14:brown
+                                       ] ;
+                              rdfs:label "Hausbock"@de ,
+                                         "hylotrupes bajulus"^^rdfs:Literal ;
+                              rdfs:seeAlso "https://www.wikidata.org/wiki/Q21121"^^rdfs:Literal .
+
+
+###  http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Holzwespen
+untitled-ontology-14:Holzwespen rdf:type owl:NamedIndividual ,
+                                         untitled-ontology-14:Cylinder_form ,
+                                         untitled-ontology-14:Douglas_fir_Sapwood ,
+                                         untitled-ontology-14:Fir_Sapwood ,
+                                         untitled-ontology-14:Freshwood_insects ,
+                                         untitled-ontology-14:GK4 ,
+                                         untitled-ontology-14:GK5 ,
+                                         untitled-ontology-14:Insectclasses ,
+                                         untitled-ontology-14:Insects ,
+                                         untitled-ontology-14:Larch_Sapwood ,
+                                         untitled-ontology-14:Pine_Sapwood ,
+                                         untitled-ontology-14:Smooth_outlet_holes ,
+                                         untitled-ontology-14:Spruce_Sapwood ,
+                                         untitled-ontology-14:acyclic_action ,
+                                         untitled-ontology-14:load_bearing_structure_irrelevant ,
+                                         untitled-ontology-14:often ,
+                                         untitled-ontology-14:round ,
+                                         [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                  owl:onProperty untitled-ontology-14:has_fly_hole_size ;
+                                                                  owl:hasValue 2
+                                                                ]
+                                                                [ rdf:type owl:Restriction ;
+                                                                  owl:onProperty untitled-ontology-14:has_fly_hole_size ;
+                                                                  owl:hasValue 3
+                                                                ]
+                                                                [ rdf:type owl:Restriction ;
+                                                                  owl:onProperty untitled-ontology-14:has_fly_hole_size ;
+                                                                  owl:hasValue 4
+                                                                ]
+                                                                [ rdf:type owl:Restriction ;
+                                                                  owl:onProperty untitled-ontology-14:has_fly_hole_size ;
+                                                                  owl:hasValue 5
+                                                                ]
+                                                                [ rdf:type owl:Restriction ;
+                                                                  owl:onProperty untitled-ontology-14:has_fly_hole_size ;
+                                                                  owl:hasValue 6
+                                                                ]
+                                                                [ rdf:type owl:Restriction ;
+                                                                  owl:onProperty untitled-ontology-14:has_fly_hole_size ;
+                                                                  owl:hasValue 7
+                                                                ]
+                                                                [ rdf:type owl:Restriction ;
+                                                                  owl:onProperty untitled-ontology-14:has_fly_hole_size ;
+                                                                  owl:hasValue 8
+                                                                ]
+                                                              ) ;
+                                           rdf:type owl:Class
+                                         ] ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty untitled-ontology-14:has_bodycolor ;
+                                           owl:someValuesFrom untitled-ontology-14:black
+                                         ] ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty untitled-ontology-14:has_bodycolor ;
+                                           owl:someValuesFrom untitled-ontology-14:yellow
+                                         ] ;
+                                rdfs:label "Holzwespen"@de ,
+                                           "urocerus gigas"^^rdfs:Literal ;
+                                rdfs:seeAlso "https://www.wikidata.org/wiki/Q967809"^^rdfs:Literal .
+
+
+###  http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Kapuzinerkäfer
+untitled-ontology-14:Kapuzinerkäfer rdf:type owl:NamedIndividual ,
+                                             untitled-ontology-14:Drywood_insects ,
+                                             untitled-ontology-14:GK1 ,
+                                             untitled-ontology-14:GK2 ,
+                                             untitled-ontology-14:GK3a ,
+                                             untitled-ontology-14:GK3b ,
+                                             untitled-ontology-14:GK4 ,
+                                             untitled-ontology-14:GK5 ,
+                                             untitled-ontology-14:Insects ,
+                                             untitled-ontology-14:Oak_Heartwood ,
+                                             untitled-ontology-14:Oak_Sapwood ,
+                                             untitled-ontology-14:Smooth_outlet_holes ,
+                                             untitled-ontology-14:acyclic_action ,
+                                             untitled-ontology-14:load_bearing_structure_irrelevant ,
+                                             untitled-ontology-14:round ,
+                                             untitled-ontology-14:seldom ,
+                                             [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                      owl:onProperty untitled-ontology-14:has_fly_hole_size ;
+                                                                      owl:hasValue 3
+                                                                    ]
+                                                                    [ rdf:type owl:Restriction ;
+                                                                      owl:onProperty untitled-ontology-14:has_fly_hole_size ;
+                                                                      owl:hasValue 4
+                                                                    ]
+                                                                    [ rdf:type owl:Restriction ;
+                                                                      owl:onProperty untitled-ontology-14:has_fly_hole_size ;
+                                                                      owl:hasValue 5
+                                                                    ]
+                                                                  ) ;
+                                               rdf:type owl:Class
+                                             ] ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty untitled-ontology-14:has_bodycolor ;
+                                               owl:someValuesFrom untitled-ontology-14:black
+                                             ] ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty untitled-ontology-14:has_bodycolor ;
+                                               owl:someValuesFrom untitled-ontology-14:brown
+                                             ] ;
+                                    rdfs:label "Kapuzinerkäfer"@de ,
+                                               "bostrychus capucinus"^^rdfs:Literal ;
+                                    rdfs:seeAlso "https://www.wikidata.org/wiki/Q1734080"^^rdfs:Literal .
+
+
+###  http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Rothalsbock
+untitled-ontology-14:Rothalsbock rdf:type owl:NamedIndividual ,
+                                          untitled-ontology-14:Douglas_fir_Sapwood ,
+                                          untitled-ontology-14:Fir_Sapwood ,
+                                          untitled-ontology-14:Freshwood_insects ,
+                                          untitled-ontology-14:Fringed_outlet_holes ,
+                                          untitled-ontology-14:GK4 ,
+                                          untitled-ontology-14:GK5 ,
+                                          untitled-ontology-14:Insects ,
+                                          untitled-ontology-14:Larch_Sapwood ,
+                                          untitled-ontology-14:Longhorn_beetle ,
+                                          untitled-ontology-14:Pine_Sapwood ,
+                                          untitled-ontology-14:Smooth_outlet_holes ,
+                                          untitled-ontology-14:Spruce_Sapwood ,
+                                          untitled-ontology-14:acyclic_action ,
+                                          untitled-ontology-14:load_bearing_structure_irrelevant ,
+                                          untitled-ontology-14:round ,
+                                          untitled-ontology-14:seldom ,
+                                          [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty untitled-ontology-14:has_fly_hole_size ;
+                                                                   owl:hasValue 4
+                                                                 ]
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty untitled-ontology-14:has_fly_hole_size ;
+                                                                   owl:hasValue 5
+                                                                 ]
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty untitled-ontology-14:has_fly_hole_size ;
+                                                                   owl:hasValue 6
+                                                                 ]
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty untitled-ontology-14:has_fly_hole_size ;
+                                                                   owl:hasValue 7
+                                                                 ]
+                                                               ) ;
+                                            rdf:type owl:Class
+                                          ] ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty untitled-ontology-14:has_bodycolor ;
+                                            owl:someValuesFrom untitled-ontology-14:brown
+                                          ] ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty untitled-ontology-14:has_bodycolor ;
+                                            owl:someValuesFrom untitled-ontology-14:red
+                                          ] ;
+                                 rdfs:label "Leptura rubra"^^rdfs:Literal ,
+                                            "Rothalsbock"@de ;
+                                 rdfs:seeAlso "https://www.wikidata.org/wiki/Q1928502"^^rdfs:Literal .
+
+
+###  http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Schusterbock
+untitled-ontology-14:Schusterbock rdf:type owl:NamedIndividual ,
+                                           untitled-ontology-14:Douglas_fir_Sapwood ,
+                                           untitled-ontology-14:Fir_Sapwood ,
+                                           untitled-ontology-14:Freshwood_insects ,
+                                           untitled-ontology-14:Fringed_outlet_holes ,
+                                           untitled-ontology-14:GK4 ,
+                                           untitled-ontology-14:GK5 ,
+                                           untitled-ontology-14:Insects ,
+                                           untitled-ontology-14:Larch_Sapwood ,
+                                           untitled-ontology-14:Longhorn_beetle ,
+                                           untitled-ontology-14:Pine_Sapwood ,
+                                           untitled-ontology-14:Smooth_outlet_holes ,
+                                           untitled-ontology-14:Spruce_Sapwood ,
+                                           untitled-ontology-14:acyclic_action ,
+                                           untitled-ontology-14:load_bearing_structure_irrelevant ,
+                                           untitled-ontology-14:round ,
+                                           untitled-ontology-14:seldom ,
+                                           [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                    owl:onProperty untitled-ontology-14:has_fly_hole_size ;
+                                                                    owl:hasValue 10
+                                                                  ]
+                                                                  [ rdf:type owl:Restriction ;
+                                                                    owl:onProperty untitled-ontology-14:has_fly_hole_size ;
+                                                                    owl:hasValue 4
+                                                                  ]
+                                                                  [ rdf:type owl:Restriction ;
+                                                                    owl:onProperty untitled-ontology-14:has_fly_hole_size ;
+                                                                    owl:hasValue 5
+                                                                  ]
+                                                                  [ rdf:type owl:Restriction ;
+                                                                    owl:onProperty untitled-ontology-14:has_fly_hole_size ;
+                                                                    owl:hasValue 6
+                                                                  ]
+                                                                  [ rdf:type owl:Restriction ;
+                                                                    owl:onProperty untitled-ontology-14:has_fly_hole_size ;
+                                                                    owl:hasValue 7
+                                                                  ]
+                                                                  [ rdf:type owl:Restriction ;
+                                                                    owl:onProperty untitled-ontology-14:has_fly_hole_size ;
+                                                                    owl:hasValue 8
+                                                                  ]
+                                                                  [ rdf:type owl:Restriction ;
+                                                                    owl:onProperty untitled-ontology-14:has_fly_hole_size ;
+                                                                    owl:hasValue 9
+                                                                  ]
+                                                                ) ;
+                                             rdf:type owl:Class
+                                           ] ,
+                                           [ rdf:type owl:Restriction ;
+                                             owl:onProperty untitled-ontology-14:has_bodycolor ;
+                                             owl:someValuesFrom untitled-ontology-14:black
+                                           ] ;
+                                  rdfs:label "Schusterbock"@de ,
+                                             "monochamus sartor"^^rdfs:Literal ;
+                                  rdfs:seeAlso "https://www.wikidata.org/wiki/Q1093724"^^rdfs:Literal .
+
+
+###  http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Schwammholz-Nagekäfer
+untitled-ontology-14:Schwammholz-Nagekäfer rdf:type owl:NamedIndividual ,
+                                                    untitled-ontology-14:Douglas_fir_Heartwood ,
+                                                    untitled-ontology-14:Douglas_fir_Sapwood ,
+                                                    untitled-ontology-14:Fir_Heartwood ,
+                                                    untitled-ontology-14:Fir_Sapwood ,
+                                                    untitled-ontology-14:GK4 ,
+                                                    untitled-ontology-14:GK5 ,
+                                                    untitled-ontology-14:Insects ,
+                                                    untitled-ontology-14:Larch_Heartwood ,
+                                                    untitled-ontology-14:Larch_Sapwood ,
+                                                    untitled-ontology-14:Pine_Heartwood ,
+                                                    untitled-ontology-14:Pine_Sapwood ,
+                                                    untitled-ontology-14:Rottenwood_Insects ,
+                                                    untitled-ontology-14:Spruce_Sapwood ,
+                                                    untitled-ontology-14:acyclic_action ,
+                                                    untitled-ontology-14:fine_and_dusty ,
+                                                    untitled-ontology-14:load_bearing_structure_irrelevant ,
+                                                    untitled-ontology-14:round ,
+                                                    untitled-ontology-14:seldom ,
+                                                    [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                             owl:onProperty untitled-ontology-14:has_fly_hole_size ;
+                                                                             owl:hasValue 1
+                                                                           ]
+                                                                           [ rdf:type owl:Restriction ;
+                                                                             owl:onProperty untitled-ontology-14:has_fly_hole_size ;
+                                                                             owl:hasValue 2
+                                                                           ]
+                                                                         ) ;
+                                                      rdf:type owl:Class
+                                                    ] ,
+                                                    [ rdf:type owl:Restriction ;
+                                                      owl:onProperty untitled-ontology-14:has_bodycolor ;
+                                                      owl:someValuesFrom untitled-ontology-14:brown
+                                                    ] ,
+                                                    [ rdf:type owl:Restriction ;
+                                                      owl:onProperty untitled-ontology-14:has_bodycolor ;
+                                                      owl:someValuesFrom untitled-ontology-14:red
+                                                    ] ;
+                                           rdfs:label "Schwammholz-Nagekäfer"@de ,
+                                                      "priobium carpini"^^rdfs:Literal ;
+                                           rdfs:seeAlso "https://www.wikidata.org/wiki/Q2916527"^^rdfs:Literal .
+
+
+###  http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#Trotzkopf
+untitled-ontology-14:Trotzkopf rdf:type owl:NamedIndividual ,
+                                        untitled-ontology-14:Douglas_fir_Heartwood ,
+                                        untitled-ontology-14:Douglas_fir_Sapwood ,
+                                        untitled-ontology-14:Fir_Heartwood ,
+                                        untitled-ontology-14:Fir_Sapwood ,
+                                        untitled-ontology-14:GK4 ,
+                                        untitled-ontology-14:GK5 ,
+                                        untitled-ontology-14:Insectclasses ,
+                                        untitled-ontology-14:Insects ,
+                                        untitled-ontology-14:Larch_Heartwood ,
+                                        untitled-ontology-14:Larch_Sapwood ,
+                                        untitled-ontology-14:Pine_Heartwood ,
+                                        untitled-ontology-14:Pine_Sapwood ,
+                                        untitled-ontology-14:Rottenwood_Insects ,
+                                        untitled-ontology-14:Spruce_Heartwood ,
+                                        untitled-ontology-14:Spruce_Sapwood ,
+                                        untitled-ontology-14:acyclic_action ,
+                                        untitled-ontology-14:fine_and_dusty ,
+                                        untitled-ontology-14:load_bearing_structure_relevant ,
+                                        untitled-ontology-14:often ,
+                                        untitled-ontology-14:round ,
+                                        [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                 owl:onProperty untitled-ontology-14:has_fly_hole_size ;
+                                                                 owl:hasValue 2
+                                                               ]
+                                                               [ rdf:type owl:Restriction ;
+                                                                 owl:onProperty untitled-ontology-14:has_fly_hole_size ;
+                                                                 owl:hasValue 3
+                                                               ]
+                                                             ) ;
+                                          rdf:type owl:Class
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty untitled-ontology-14:has_bodycolor ;
+                                          owl:someValuesFrom untitled-ontology-14:black
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty untitled-ontology-14:has_bodycolor ;
+                                          owl:someValuesFrom untitled-ontology-14:brown
+                                        ] ;
+                               rdfs:label "Trotzkopf"@de ,
+                                          "hadrobregmus pertinax"^^rdfs:Literal ;
+                               rdfs:seeAlso "https://www.wikidata.org/wiki/Q1788955"^^rdfs:Literal .
+
+
+###  http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#brauner_Splintholzkäfer
+untitled-ontology-14:brauner_Splintholzkäfer rdf:type owl:NamedIndividual ,
+                                                      untitled-ontology-14:Alder_Sapwood ,
+                                                      untitled-ontology-14:Ash_Sapwood ,
+                                                      untitled-ontology-14:Beech_Sapwood ,
+                                                      untitled-ontology-14:Chestnut_Sapwood ,
+                                                      untitled-ontology-14:Drywood_insects ,
+                                                      untitled-ontology-14:GK0 ,
+                                                      untitled-ontology-14:GK1 ,
+                                                      untitled-ontology-14:GK2 ,
+                                                      untitled-ontology-14:GK3a ,
+                                                      untitled-ontology-14:GK3b ,
+                                                      untitled-ontology-14:GK4 ,
+                                                      untitled-ontology-14:GK5 ,
+                                                      untitled-ontology-14:Insectclasses ,
+                                                      untitled-ontology-14:Insects ,
+                                                      untitled-ontology-14:Oak_Sapwood ,
+                                                      untitled-ontology-14:Redbeech_Sapwood ,
+                                                      untitled-ontology-14:Sapwood_beetle ,
+                                                      untitled-ontology-14:Smooth_outlet_holes ,
+                                                      untitled-ontology-14:acyclic_action ,
+                                                      untitled-ontology-14:fine_and_dusty ,
+                                                      untitled-ontology-14:load_bearing_structure_irrelevant ,
+                                                      untitled-ontology-14:often ,
+                                                      untitled-ontology-14:round ,
+                                                      [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                               owl:onProperty untitled-ontology-14:has_fly_hole_size ;
+                                                                               owl:hasValue 1
+                                                                             ]
+                                                                             [ rdf:type owl:Restriction ;
+                                                                               owl:onProperty untitled-ontology-14:has_fly_hole_size ;
+                                                                               owl:hasValue 2
+                                                                             ]
+                                                                           ) ;
+                                                        rdf:type owl:Class
+                                                      ] ,
+                                                      [ rdf:type owl:Restriction ;
+                                                        owl:onProperty untitled-ontology-14:has_bodycolor ;
+                                                        owl:someValuesFrom untitled-ontology-14:brown
+                                                      ] ,
+                                                      [ rdf:type owl:Restriction ;
+                                                        owl:onProperty untitled-ontology-14:has_bodycolor ;
+                                                        owl:someValuesFrom untitled-ontology-14:red
+                                                      ] ;
+                                             rdfs:label "Brauner Splintholzkäfer"@de ,
+                                                        "lyctus brunneus"^^rdfs:Literal ;
+                                             rdfs:seeAlso "https://www.wikidata.org/wiki/Q639794"^^rdfs:Literal .
+
+
+###  http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#gekämmter_Nagekäfer
+untitled-ontology-14:gekämmter_Nagekäfer rdf:type owl:NamedIndividual ,
+                                                  untitled-ontology-14:Alder_Heartwood ,
+                                                  untitled-ontology-14:Alder_Sapwood ,
+                                                  untitled-ontology-14:Ash_Heartwood ,
+                                                  untitled-ontology-14:Ash_Sapwood ,
+                                                  untitled-ontology-14:Beech_Heartwood ,
+                                                  untitled-ontology-14:Beech_Sapwood ,
+                                                  untitled-ontology-14:Chestnut_Heartwood ,
+                                                  untitled-ontology-14:Chestnut_Sapwood ,
+                                                  untitled-ontology-14:Drywood_insects ,
+                                                  untitled-ontology-14:GK1 ,
+                                                  untitled-ontology-14:GK2 ,
+                                                  untitled-ontology-14:GK3a ,
+                                                  untitled-ontology-14:GK3b ,
+                                                  untitled-ontology-14:GK4 ,
+                                                  untitled-ontology-14:GK5 ,
+                                                  untitled-ontology-14:Hardwood_Sapwood ,
+                                                  untitled-ontology-14:Insects ,
+                                                  untitled-ontology-14:Oak_Heartwood ,
+                                                  untitled-ontology-14:Oak_Sapwood ,
+                                                  untitled-ontology-14:Redbeech_Heartwood ,
+                                                  untitled-ontology-14:Redbeech_Sapwood ,
+                                                  untitled-ontology-14:Smooth_outlet_holes ,
+                                                  untitled-ontology-14:acyclic_action ,
+                                                  untitled-ontology-14:load_bearing_structure_irrelevant ,
+                                                  untitled-ontology-14:round ,
+                                                  untitled-ontology-14:seldom ,
+                                                  untitled-ontology-14:woodboring_beetle ,
+                                                  [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty untitled-ontology-14:has_fly_hole_size ;
+                                                                           owl:hasValue 1
+                                                                         ]
+                                                                         [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty untitled-ontology-14:has_fly_hole_size ;
+                                                                           owl:hasValue 2
+                                                                         ]
+                                                                       ) ;
+                                                    rdf:type owl:Class
+                                                  ] ,
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty untitled-ontology-14:has_bodycolor ;
+                                                    owl:someValuesFrom untitled-ontology-14:black
+                                                  ] ,
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty untitled-ontology-14:has_bodycolor ;
+                                                    owl:someValuesFrom untitled-ontology-14:brown
+                                                  ] ;
+                                         rdfs:label "Gekämmter Nagekäfer"@de ,
+                                                    "ptilinus pectinicornis"^^rdfs:Literal ;
+                                         rdfs:seeAlso "https://www.wikidata.org/wiki/Q2314103"^^rdfs:Literal .
+
+
+###  http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#gewöhnlicher_Nagekäfer
+untitled-ontology-14:gewöhnlicher_Nagekäfer rdf:type owl:NamedIndividual ,
+                                                     untitled-ontology-14:Alder_Heartwood ,
+                                                     untitled-ontology-14:Alder_Sapwood ,
+                                                     untitled-ontology-14:Ash_Heartwood ,
+                                                     untitled-ontology-14:Ash_Sapwood ,
+                                                     untitled-ontology-14:Beech_Heartwood ,
+                                                     untitled-ontology-14:Beech_Sapwood ,
+                                                     untitled-ontology-14:Chestnut_Heartwood ,
+                                                     untitled-ontology-14:Chestnut_Sapwood ,
+                                                     untitled-ontology-14:Douglas_fir_Heartwood ,
+                                                     untitled-ontology-14:Douglas_fir_Sapwood ,
+                                                     untitled-ontology-14:Drywood_insects ,
+                                                     untitled-ontology-14:Fir_Heartwood ,
+                                                     untitled-ontology-14:Fir_Sapwood ,
+                                                     untitled-ontology-14:GK1 ,
+                                                     untitled-ontology-14:GK2 ,
+                                                     untitled-ontology-14:GK3a ,
+                                                     untitled-ontology-14:GK3b ,
+                                                     untitled-ontology-14:GK4 ,
+                                                     untitled-ontology-14:GK5 ,
+                                                     untitled-ontology-14:Insectclasses ,
+                                                     untitled-ontology-14:Insects ,
+                                                     untitled-ontology-14:Larch_Sapwood ,
+                                                     untitled-ontology-14:Oak_Sapwood ,
+                                                     untitled-ontology-14:Pine_Heartwood ,
+                                                     untitled-ontology-14:Pine_Sapwood ,
+                                                     untitled-ontology-14:Redbeech_Heartwood ,
+                                                     untitled-ontology-14:Redbeech_Sapwood ,
+                                                     untitled-ontology-14:Smooth_outlet_holes ,
+                                                     untitled-ontology-14:Spruce_Heartwood ,
+                                                     untitled-ontology-14:Spruce_Sapwood ,
+                                                     untitled-ontology-14:cyclic_action ,
+                                                     untitled-ontology-14:fine_and_dusty ,
+                                                     untitled-ontology-14:load_bearing_structure_relevant ,
+                                                     untitled-ontology-14:often ,
+                                                     untitled-ontology-14:round ,
+                                                     untitled-ontology-14:woodboring_beetle ,
+                                                     [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                              owl:onProperty untitled-ontology-14:has_fly_hole_size ;
+                                                                              owl:hasValue 1
+                                                                            ]
+                                                                            [ rdf:type owl:Restriction ;
+                                                                              owl:onProperty untitled-ontology-14:has_fly_hole_size ;
+                                                                              owl:hasValue 2
+                                                                            ]
+                                                                          ) ;
+                                                       rdf:type owl:Class
+                                                     ] ,
+                                                     [ rdf:type owl:Restriction ;
+                                                       owl:onProperty untitled-ontology-14:has_bodycolor ;
+                                                       owl:someValuesFrom untitled-ontology-14:black
+                                                     ] ,
+                                                     [ rdf:type owl:Restriction ;
+                                                       owl:onProperty untitled-ontology-14:has_bodycolor ;
+                                                       owl:someValuesFrom untitled-ontology-14:brown
+                                                     ] ;
+                                            rdfs:label "Gewöhnlicher Nagekäfer"@de ,
+                                                       "anobium punctatum"^^rdfs:Literal ;
+                                            rdfs:seeAlso "https://www.wikidata.org/wiki/Q27925"^^rdfs:Literal .
+
+
+###  http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#linierter_Splintholzkäfer
+untitled-ontology-14:linierter_Splintholzkäfer rdf:type owl:NamedIndividual ,
+                                                        untitled-ontology-14:Drywood_insects ,
+                                                        untitled-ontology-14:GK0 ,
+                                                        untitled-ontology-14:GK1 ,
+                                                        untitled-ontology-14:GK2 ,
+                                                        untitled-ontology-14:GK3a ,
+                                                        untitled-ontology-14:GK3b ,
+                                                        untitled-ontology-14:GK4 ,
+                                                        untitled-ontology-14:GK5 ,
+                                                        untitled-ontology-14:Insectclasses ,
+                                                        untitled-ontology-14:Insects ,
+                                                        untitled-ontology-14:Oak_Heartwood ,
+                                                        untitled-ontology-14:Oak_Sapwood ,
+                                                        untitled-ontology-14:Sapwood_beetle ,
+                                                        untitled-ontology-14:Smooth_outlet_holes ,
+                                                        untitled-ontology-14:acyclic_action ,
+                                                        untitled-ontology-14:fine_and_dusty ,
+                                                        untitled-ontology-14:load_bearing_structure_irrelevant ,
+                                                        untitled-ontology-14:often ,
+                                                        untitled-ontology-14:round ,
+                                                        [ rdf:type owl:Restriction ;
+                                                          owl:onProperty untitled-ontology-14:has_bodycolor ;
+                                                          owl:someValuesFrom untitled-ontology-14:black
+                                                        ] ,
+                                                        [ rdf:type owl:Restriction ;
+                                                          owl:onProperty untitled-ontology-14:has_bodycolor ;
+                                                          owl:someValuesFrom untitled-ontology-14:brown
+                                                        ] ,
+                                                        [ rdf:type owl:Restriction ;
+                                                          owl:onProperty untitled-ontology-14:has_fly_hole_size ;
+                                                          owl:hasValue 1
+                                                        ] ;
+                                               untitled-ontology-14:has_special_feature untitled-ontology-14:pointed_stripes_on_the_wings ;
+                                               rdfs:label "Linierter Splintholzkäfer"@de ,
+                                                          "lyctus linearis"^^rdfs:Literal ;
+                                               rdfs:seeAlso "https://www.wikidata.org/wiki/Q637273"^^rdfs:Literal .
+
+
+###  http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#pointed_stripes_on_the_wings
+untitled-ontology-14:pointed_stripes_on_the_wings rdf:type owl:NamedIndividual ,
+                                                           untitled-ontology-14:Special_Features .
+
+
+###  http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#veränderlicher_Scheibenbock
+untitled-ontology-14:veränderlicher_Scheibenbock rdf:type owl:NamedIndividual ,
+                                                          untitled-ontology-14:Beech_Sapwood ,
+                                                          untitled-ontology-14:Douglas_fir_Sapwood ,
+                                                          untitled-ontology-14:Fir_Sapwood ,
+                                                          untitled-ontology-14:Freshwood_insects ,
+                                                          untitled-ontology-14:GK4 ,
+                                                          untitled-ontology-14:GK5 ,
+                                                          untitled-ontology-14:Insectclasses ,
+                                                          untitled-ontology-14:Insects ,
+                                                          untitled-ontology-14:Larch_Sapwood ,
+                                                          untitled-ontology-14:Longhorn_beetle ,
+                                                          untitled-ontology-14:Oak_Sapwood ,
+                                                          untitled-ontology-14:Pine_Sapwood ,
+                                                          untitled-ontology-14:Smooth_outlet_holes ,
+                                                          untitled-ontology-14:Spruce_Sapwood ,
+                                                          untitled-ontology-14:acyclic_action ,
+                                                          untitled-ontology-14:load_bearing_structure_irrelevant ,
+                                                          untitled-ontology-14:often ,
+                                                          untitled-ontology-14:oval ,
+                                                          [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                                   owl:onProperty untitled-ontology-14:has_fly_hole_size ;
+                                                                                   owl:hasValue 3
+                                                                                 ]
+                                                                                 [ rdf:type owl:Restriction ;
+                                                                                   owl:onProperty untitled-ontology-14:has_fly_hole_size ;
+                                                                                   owl:hasValue 4
+                                                                                 ]
+                                                                                 [ rdf:type owl:Restriction ;
+                                                                                   owl:onProperty untitled-ontology-14:has_fly_hole_size ;
+                                                                                   owl:hasValue 5
+                                                                                 ]
+                                                                               ) ;
+                                                            rdf:type owl:Class
+                                                          ] ,
+                                                          [ rdf:type owl:Restriction ;
+                                                            owl:onProperty untitled-ontology-14:has_bodycolor ;
+                                                            owl:someValuesFrom untitled-ontology-14:black
+                                                          ] ,
+                                                          [ rdf:type owl:Restriction ;
+                                                            owl:onProperty untitled-ontology-14:has_bodycolor ;
+                                                            owl:someValuesFrom untitled-ontology-14:brown
+                                                          ] ,
+                                                          [ rdf:type owl:Restriction ;
+                                                            owl:onProperty untitled-ontology-14:has_bodycolor ;
+                                                            owl:someValuesFrom untitled-ontology-14:red
+                                                          ] ,
+                                                          [ rdf:type owl:Restriction ;
+                                                            owl:onProperty untitled-ontology-14:has_bodycolor ;
+                                                            owl:someValuesFrom untitled-ontology-14:yellow
+                                                          ] ;
+                                                 rdfs:label "Veränderlicher Scheibenbock"@de ,
+                                                            "phymatodes testaceus"^^rdfs:Literal ;
+                                                 rdfs:seeAlso "https://www.wikidata.org/wiki/Q1315415"^^rdfs:Literal .
+
+
+###  http://www.semanticweb.org/christian/ontologies/2021/4/untitled-ontology-14#weicher_Nagekäfer
+untitled-ontology-14:weicher_Nagekäfer rdf:type owl:NamedIndividual ,
+                                                untitled-ontology-14:Drywood_insects ,
+                                                untitled-ontology-14:Fir_Sapwood ,
+                                                untitled-ontology-14:GK1 ,
+                                                untitled-ontology-14:GK2 ,
+                                                untitled-ontology-14:GK3a ,
+                                                untitled-ontology-14:GK3b ,
+                                                untitled-ontology-14:GK4 ,
+                                                untitled-ontology-14:GK5 ,
+                                                untitled-ontology-14:Insects ,
+                                                untitled-ontology-14:Larch_Sapwood ,
+                                                untitled-ontology-14:Pine_Sapwood ,
+                                                untitled-ontology-14:Smooth_outlet_holes ,
+                                                untitled-ontology-14:Spruce_Sapwood ,
+                                                untitled-ontology-14:acyclic_action ,
+                                                untitled-ontology-14:load_bearing_structure_irrelevant ,
+                                                untitled-ontology-14:round ,
+                                                untitled-ontology-14:seldom ,
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty untitled-ontology-14:has_bodycolor ;
+                                                  owl:someValuesFrom untitled-ontology-14:brown
+                                                ] ,
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty untitled-ontology-14:has_fly_hole_size ;
+                                                  owl:hasValue 2
+                                                ] ;
+                                       rdfs:label "Weicher Nagekäfer"@de ,
+                                                  "ernobius mollis"^^rdfs:Literal ;
+                                       rdfs:seeAlso "https://www.wikidata.org/wiki/Q602516"^^rdfs:Literal .
+
+
+###  http://www.semanticweb.org/christian/ontologies/2021/4/wood_destroying_insects#gescheckter/bunter_Nagekäfer
+<http://www.semanticweb.org/christian/ontologies/2021/4/wood_destroying_insects#gescheckter/bunter_Nagekäfer> rdf:type owl:NamedIndividual ,
+                                                                                                                       untitled-ontology-14:Douglas_fir_Heartwood ,
+                                                                                                                       untitled-ontology-14:Douglas_fir_Sapwood ,
+                                                                                                                       untitled-ontology-14:Fir_Heartwood ,
+                                                                                                                       untitled-ontology-14:Fir_Sapwood ,
+                                                                                                                       untitled-ontology-14:GK4 ,
+                                                                                                                       untitled-ontology-14:GK5 ,
+                                                                                                                       untitled-ontology-14:Insectclasses ,
+                                                                                                                       untitled-ontology-14:Insects ,
+                                                                                                                       untitled-ontology-14:Larch_Heartwood ,
+                                                                                                                       untitled-ontology-14:Larch_Sapwood ,
+                                                                                                                       untitled-ontology-14:Make_hearable_nagging_noise ,
+                                                                                                                       untitled-ontology-14:Oak_Heartwood ,
+                                                                                                                       untitled-ontology-14:Oak_Sapwood ,
+                                                                                                                       untitled-ontology-14:Pine_Heartwood ,
+                                                                                                                       untitled-ontology-14:Pine_Sapwood ,
+                                                                                                                       untitled-ontology-14:Roll-shaped ,
+                                                                                                                       untitled-ontology-14:Rottenwood_Insects ,
+                                                                                                                       untitled-ontology-14:Spruce_Heartwood ,
+                                                                                                                       untitled-ontology-14:Spruce_Sapwood ,
+                                                                                                                       untitled-ontology-14:acyclic_action ,
+                                                                                                                       untitled-ontology-14:fine_and_dusty ,
+                                                                                                                       untitled-ontology-14:load_bearing_structure_irrelevant ,
+                                                                                                                       untitled-ontology-14:often ,
+                                                                                                                       untitled-ontology-14:round ,
+                                                                                                                       untitled-ontology-14:woodboring_beetle ,
+                                                                                                                       [ rdf:type owl:Restriction ;
+                                                                                                                         owl:onProperty untitled-ontology-14:has_bodycolor ;
+                                                                                                                         owl:someValuesFrom untitled-ontology-14:brown
+                                                                                                                       ] ;
+                                                                                                              rdfs:label "Gescheckter/Bunter Nagekäfer"@de ,
+                                                                                                                         "Xestobium rufovillosum"^^rdfs:Literal ;
+                                                                                                              rdfs:seeAlso "https://www.wikidata.org/wiki/Q1074662"^^rdfs:Literal .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDifferent ;
+  owl:distinctMembers ( untitled-ontology-14:Blauer_Scheibenbock
+                        untitled-ontology-14:Grubenhalsbock
+                        untitled-ontology-14:Hausbock
+                        untitled-ontology-14:Holzwespen
+                        untitled-ontology-14:Kapuzinerkäfer
+                        untitled-ontology-14:Rothalsbock
+                        untitled-ontology-14:Schusterbock
+                        untitled-ontology-14:Schwammholz-Nagekäfer
+                        untitled-ontology-14:Trotzkopf
+                        untitled-ontology-14:brauner_Splintholzkäfer
+                        untitled-ontology-14:gekämmter_Nagekäfer
+                        untitled-ontology-14:gewöhnlicher_Nagekäfer
+                        untitled-ontology-14:linierter_Splintholzkäfer
+                        untitled-ontology-14:veränderlicher_Scheibenbock
+                        untitled-ontology-14:weicher_Nagekäfer
+                        <http://www.semanticweb.org/christian/ontologies/2021/4/wood_destroying_insects#gescheckter/bunter_Nagekäfer>
+                      )
+] .
+
+
+[ rdf:type owl:AllDifferent ;
+  owl:distinctMembers ( untitled-ontology-14:Holzwespen
+                        untitled-ontology-14:brauner_Splintholzkäfer
+                      )
+] .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
